@@ -38,7 +38,7 @@ $(document).ready(() => {
             data: 'id', render: (data, col, row) => {
                return `
                   <a href="${baseUrl}admin/certificaciones/${data}/actualizar" type="button" class="btn btn-main m-1" data-bs-toggle="tooltip" data-bs-title="Editar"><i class="fa-solid fa-pencil"></i></a>
-                  <a href="${baseUrl}admin/certificaciones/${data}/ver" target="_blank" type="button" class="btn btn-main m-1" data-bs-toggle="tooltip" data-bs-title="Visualizar"><i class="fa-solid fa-eye"></i></a>
+                  <a href="${baseUrl}media/certificaciones/${data}" target="_blank" type="button" class="btn btn-main m-1" data-bs-toggle="tooltip" data-bs-title="Visualizar"><i class="fa-solid fa-eye"></i></a>
                `;
             }
          }

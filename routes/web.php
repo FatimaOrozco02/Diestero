@@ -50,8 +50,14 @@ $router->group(['prefix' => 'admin'], function (Router $router) {
             });
 
             // Cerrar sesión
-            $router->post('/cerrar_sesion', 'AdminController@logout', [CsrfMiddleware::class]);
+            $router->get('/cerrar_sesion', 'AdminController@logout');
       });
+});
+
+// Archivos
+$router->group(['prefix' => 'media'], function (Router $router) {
+      $router->get('/certificaciones/{certification_id}', 'MediaController@certification');
+      $router->get('/firmas/{certification_id}', 'MediaController@signature');
 });
 
 // Pruebas

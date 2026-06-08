@@ -51,7 +51,7 @@
          <label for="signatureFile" class="form-label text-main">Firma del certificador</label>
          <input type="file" name="signature" id="signatureFile" class="form-control" accept="image/png">
          <?php if (!empty($certification) && !empty($certification['signature'])): ?>
-            <div><img src="signatures/<?= $certification['signature'] ?>" alt="Firma" class="mh-5r"></div>
+            <div><img src="<?= $baseUrl ?>media/firmas/<?= $certification['id'] ?>" alt="Firma" class="mh-5r"></div>
          <?php endif; ?>
       </div>
       <div class="col-6 mb-3">

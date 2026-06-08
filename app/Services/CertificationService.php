@@ -168,7 +168,7 @@ final class CertificationService extends Service
 
                   // Código
                   $pdf->SetFont('helvetica', '', 10);
-                  $pdf->SetXY(110, 111.5);
+                  $pdf->SetXY(110, 111.75);
                   $pdf->Cell(100, 0,  $isUpdate ? $certification['code'] : $certificationData['code'], 0, 1, 'L');
 
                   // Dirección
@@ -195,21 +195,21 @@ final class CertificationService extends Service
 
                   // Fecha de inicio
                   $pdf->SetFont('helvetica', 'B', 10);
-                  $pdf->SetXY(70, 165);
-                  $pdf->Cell(0, 0, $formatter->format($certificationData['start_date']), 0, 1, '');
+                  $pdf->SetXY(82, 170.4);
+                  $pdf->Cell(0, 0, $certificationData['start_date'], 0, 1, 'L');
 
                   // Fecha de fin
-                  $pdf->SetXY(75, 170);
-                  $pdf->Cell(0, 0, $formatter->format($certificationData['end_date']), 0, 1, '');
+                  $pdf->SetXY(98, 177);
+                  $pdf->Cell(0, 0, $certificationData['end_date'], 0, 1, 'L');
 
                   // Certificador
-                  $pdf->SetFont('helvetica', 'B', 13);
-                  $pdf->SetXY($pageWidth - 85, 185);
+                  $pdf->SetFont('helvetica', '', 13);
+                  $pdf->SetXY($pageWidth - 85, 186);
                   $pdf->Cell(60, 0, $certificationData['certifier'], 0, 1, 'C');
 
                   // Firma
                   if (!empty($signature)) {
-                        $pdf->Image($storagePath . "uploads/signatures/" . $signature, $pageWidth - 70, 160, 30, 0, 'PNG');
+                        $pdf->Image($storagePath . "uploads/signatures/" . $signature, $pageWidth - 74, 162, 28, 0, 'PNG');
                   }
 
                   // Guardar PDF

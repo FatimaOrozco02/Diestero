@@ -3,7 +3,7 @@
 ?>
 
 <div class="container py-5">
-   <h1 class="text-center">Certificaciones</h1>
+   <h1 class="text-center">Administración de certificaciones</h1>
 
    <div class="mb-3">
       <a href="<?= $baseUrl ?>admin/certificaciones/crear" type="button" class="btn btn-main">Nuevo Certificado</a>
