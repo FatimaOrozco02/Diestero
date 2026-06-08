@@ -1,30 +1,27 @@
 <div class="w-100 bg-white">
 
-    <!-- 1. HERO BANNER DE CERTIFICACIONES (Fondo con opacidad clara) -->
+
     <section class="py-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
-        <div class="container px-4 px-md-5">
+        <div class="container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">CERTIFICACIONES</h1>
 
             <h5 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 1rem; letter-spacing: 0.5px;">QUE FORTALECEN LA CONFIANZA</h5>
-
-
-            <div class="text-muted lh-base mt-4" style="font-size: 0.95rem; max-width: 900px;">
-                <p class="mb-3">
-                    Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
-                </p>
-                <p class="mb-0">
-                    La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
-                </p>
-            </div>
         </div>
     </section>
 
-
     <section class="py-5" style="background-color: #f4f6f8;">
-        <div class="container" style="max-width: 1100px;">
+        <div class="text-muted lh-base mt-4  px-5" style="font-size: 0.95rem; ">
+            <p class="mb-3">
+                Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
+            </p>
+            <p class="mb-0">
+                La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
+            </p>
+        </div>
 
-            
+        <div class="container-fluid px-5 py-5">
+
             <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center mb-4">
 
                 <!-- ISO 9001 -->
@@ -61,8 +58,8 @@
 
             </div>
 
-           
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center mx-auto mb-5" style="max-width: 825px;">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center mx-auto mb-5">
 
                 <!-- ISO 22000 -->
                 <div class="col">
@@ -90,7 +87,7 @@
 
             </div>
 
-           
+
             <div class="text-center mt-4">
                 <a href="#" class="btn px-4 py-2 text-white fw-semibold rounded-2 shadow-sm text-decoration-none" style="background-color: #8D3C45; font-size: 0.9rem;">Conocer más</a>
             </div>

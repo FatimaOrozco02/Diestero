@@ -1,10 +1,9 @@
 <nav class="navbar navbar-expand-lg  bg-white py-3">
    <div class="container-fluid d-flex align-items-center justify-content-between px-5">
       <div class="container-fluid">
-         <a class="navbar-brand" href="">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Logo
-         </a>
+         
+            <img src="<?php echo $baseUrl ?>/img/logo diestro_1200px_color.png" alt="Logo" width="70" height="64" class="d-inline-block align-text-top">
+        
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav d-flex align-items-center gap-5">

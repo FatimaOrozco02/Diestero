@@ -49,6 +49,13 @@ h1 {
    border-radius: 0;
 }
 
+.borde{
+   border:  4px solid var(---color_blue);
+   
+}
+
+
+
 @keyframes animloader {
    0% {
       box-shadow: 0 48px rgba(255, 255, 255, 0), 48px 48px rgba(255, 255, 255, 0), 48px 96px rgba(255, 255, 255, 0), 0px 96px rgba(255, 255, 255, 0);
