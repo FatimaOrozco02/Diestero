@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg  bg-white border-bottom py-3">
+<nav class="navbar navbar-expand-lg  bg-white py-3">
    <div class="container-fluid d-flex align-items-center justify-content-between px-5">
       <div class="container-fluid">
          <a class="navbar-brand" href="">
@@ -8,12 +8,12 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav d-flex align-items-center gap-5">
-            <a class="nav-link active text-uppercase fw-bold text-decoration-none" aria-current="page" href="#">SOMOS</a>
-            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="#">CERTIFICACIONES</a>
-            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="#">SOLUCIONES ESTRATÉGICAS</a>
-            <a class="nav-link text-uppercase fw-bold text-decoration-none"  href="#">CFOAAS</a>
-            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="#">SOCIOS</a>
-            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="VIEW/contacto/contacto.php">CONTACTO</a>
+            <a class="nav-link active text-uppercase fw-bold text-decoration-none" aria-current="page" href="<?php echo $baseUrl ?>/somos">SOMOS</a>
+            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="<?php echo $baseUrl ?>/certificaciones">CERTIFICACIONES</a>
+            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="<?php echo $baseUrl ?>/soluciones_estrategicas">SOLUCIONES ESTRATÉGICAS</a>
+            <a class="nav-link text-uppercase fw-bold text-decoration-none"  href="<?php echo $baseUrl ?>/cfoaas">CFOAAS</a>
+            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="<?php echo $baseUrl ?>/socios">SOCIOS</a>
+            <a class="nav-link text-uppercase fw-bold text-decoration-none" href="<?php echo $baseUrl ?>/contacto">CONTACTO</a>
             
          </div>
       </div>

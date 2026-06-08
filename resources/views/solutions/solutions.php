@@ -9,13 +9,11 @@
             <h5 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 1rem; letter-spacing: 0.5px;">SOLUCIONES DISEÑADAS PARA IMPULSAR TU ORGANIZACIÓN</h5>
             
            
-            <div class="text-muted lh-base mt-4" style="font-size: 0.95rem; max-width: 900px;">
+            <div class="text-muted lh-base mt-4" style="font-size: 0.95rem";>
                 <p class="mb-3">
-                    .
+                    Diseñamos e impulamos estrategiass financieras que generan valor, crecimiento y oportunidades pra tu organización.
                 </p>
-                <p class="mb-0">
-                    La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
-                </p>
+                
             </div>
         </div>
     </section>

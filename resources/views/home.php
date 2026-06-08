@@ -9,14 +9,14 @@
 
     <!-- 2. SECCIÓN SOMOS -->
     <section id="somos" class="py-5 text-center bg-white">
-        <div class="container" style="max-width: 800px;">
+        <div class="container" >
             
-            <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">Somos</h2>
+            <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">SOMOS</h2>
             
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">Tu solidez es nuestro negocio</h6>
+            <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">TU SOLIDEZ ES NUESTRO NEGOCIO</h6>
             
             
-            <div class="text-muted lh-base" style="font-size: 0.95rem;">
+            <div class="text-muted text-start lh-base" style="font-size: 0.95rem;">
                 <p class="mb-3">
                     Somos una de las principales firmas independientes del sector financiero en México, especializada en asesoría financiera, banca de inversión, gobierno corporativo, certificaciones y fortalecimiento empresarial.
                 </p>
@@ -32,12 +32,12 @@
 
     <!-- 3. SECCIÓN ¿QUÉ HACEMOS?  -->
     <section id="que-hacemos" class="py-5" style="background-color: #f4f6f8;">
-        <div class="container" style="max-width: 950px;">
+        <div class="container" >
             
             
             <div class="text-center mb-5">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">¿Qué hacemos?</h2>
-                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">Convertimos los desafíos empresariales en oportunidades de crecimiento</h6>
+                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">¿QUÉ HACEMOS?</h2>
+                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">CONVERTIMOS LOS DESAFÍOS EMPRESARIALES EN OPORTUNIDADES DE CRECIMIENTO</h6>
             </div>
 
            
@@ -98,12 +98,12 @@
 
         <!-- 4. SECCIÓN TRAYECTORIA (Fondo Blanco) -->
     <section id="trayectoria" class="py-5 bg-white">
-        <div class="container" style="max-width: 950px;">
+        <div class="container" >
             
             
             <div class="text-center mb-5">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">Trayectoria</h2>
-                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">Más de 18 años fortaleciendo empresas</h6>
+                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">TRAYECTORIA</h2>
+                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">MÁS DE 18 AÑOS FORTALECIENDO EMPRESAS</h6>
             </div>
 
             <div class="row g-4 align-items-center">
@@ -130,7 +130,7 @@
             </div>
            
             <div class="row mt-4">
-                <div class="col-100 text-muted text-center mx-auto" style="max-width: 850px; font-size: 0.92rem;">
+                <div class="col-12 text-muted text-start mx-auto" style="max-width: 850px; font-size: 0.92rem;">
                     <p class="mb-0">
                         A lo largo de estos años hemos construido una solida red de relaciones con instituciones financieras, inversionistas, especialistas sectoriales y aliados estratégicos que fortalecen las soluciones que ofrecemos a nuestros clientes.
                     </p>
@@ -140,15 +140,15 @@
         </div>
     </section>
 
-    <!-- 5. SECCIÓN FORTALECIMIENTO DE NEGOCIOS ) -->
+    <!-- 5. SECCIÓN FORTALECIMIENTO DE NEGOCIOS -->
     <section id="fortalecimiento" class="py-5" style="background-color: #f4f6f8;">
-        <div class="container" style="max-width: 800px;">
+        <div class="container" >
             
             
             <div class="text-center mb-4">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">Fortalecimiento de Negocios</h2>
-                <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">Fortalecemos negocios. Impulsamos crecimiento.</h6>
-                <h4 class="text-uppercase fw-bold mt-2" style="color: #8D3C45; font-size: 1.3rem;">Experiencia, Estrategia y Ejecución</h4>
+                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">FORTALECIMIENTO DE NEGOCIOS</h2>
+                <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">FORTALECEMOS NEGOCIOS, IMPULSAMOS CRECIMIENTO</h6>
+                <h4 class="text-uppercase fw-bold mt-2" style="color: #8D3C45; font-size: 1.3rem;">EXPERECIENCIA, ESTRATÉGIA Y EJECUCIÓN</h4>
             </div>
 
             
@@ -159,25 +159,25 @@
                 
                 
                 <div>
-                    <h5 class="text-uppercase fw-bold mb-1" style="color: #1E355E; font-size: 1rem;">1. Entendimiento del Negocio</h5>
+                    <h5 class="text-uppercase fw-bold mt-2 d-inline-block me-2" style="color: #8D3C45; font-size: 1.3rem;">1.</h5><h5 class="text-uppercase fw-bold mb-1 d-inline-block" style="color: #1E355E; font-size: 1rem;">ENTENDIMIENTO DEL NEGOCIO</h5>
                     <p class="mb-0 ps-md-3">Analizamos a profundidad la situación financiera, operativa y estratégica de cada organización.</p>
                 </div>
 
                 
                 <div>
-                    <h5 class="text-uppercase fw-bold mb-1" style="color: #1E355E; font-size: 1rem;">2. Diseño de Soluciones</h5>
+                    <h5 class="text-uppercase fw-bold mt-2 d-inline-block me-2" style="color: #8D3C45; font-size: 1.3rem;">2.</h5><h5 class="text-uppercase fw-bold mb-1 d-inline-block" style="color: #1E355E; font-size: 1rem;">DISEÑO DE SOLUCIONES</h5>
                     <p class="mb-0 ps-md-3">Construimos estrategias alineadas con los objetivos de crecimiento y creación de valor.</p>
                 </div>
 
                 
                 <div>
-                    <h5 class="text-uppercase fw-bold mb-1" style="color: #1E355E; font-size: 1rem;">3. Implementación</h5>
+                    <h5 class="text-uppercase fw-bold mt-2 d-inline-block me-2" style="color: #8D3C45; font-size: 1.3rem;">3.</h5><h5 class="text-uppercase fw-bold mb-1 d-inline-block" style="color: #1E355E; font-size: 1rem;">IMPLEMENTACION</h5>
                     <p class="mb-0 ps-md-3">Participamos activamente en la ejecución de las soluciones acordadas.</p>
                 </div>
 
                 
                 <div>
-                    <h5 class="text-uppercase fw-bold mb-1" style="color: #1E355E; font-size: 1rem;">4. Seguimiento y Mejora Continua</h5>
+                    <h5 class="text-uppercase fw-bold mt-2 d-inline-block me-2" style="color: #8D3C45; font-size: 1.3rem;">4.</h5><h5 class="text-uppercase fw-bold mb-1 d-inline-block" style="color: #1E355E; font-size: 1rem;">SEGUIMIENTO Y MEJORA CONTINUA</h5>
                     <p class="mb-0 ps-md-3">Monitoreamos resultados para asegurar el cumplimiento de los objetivos establecidos.</p>
                 </div>
 
@@ -186,14 +186,14 @@
         </div>
     </section>
 
-    <!-- 6. SECCIÓN CASOS DE ÉXITO (Logos de Clientes con fondo Blanco) -->
+    <!-- 6. SECCIÓN CASOS DE ÉXITO-->
     <section id="casos-exito" class="py-5 bg-white">
-        <div class="container text-center" style="max-width: 950px;">
+        <div class="container text-center" >
             
             
             <div class="mb-5">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">Casos de Éxito</h2>
-                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">Empresas que han confiado en Diestro</h6>
+                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">CASOS DE ÉXITO</h2>
+                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">EMPRESAS QUE HAN CONFIADO EN DIESTRO</h6>
             </div>
 
             
