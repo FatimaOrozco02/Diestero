@@ -1,0 +1,6 @@
+Luego de agregar lo requerimientos en listados abajo ejecuta este comando:
+composer dump-autoload
+
+List of composer requirements:
+
+- composer require monolog/monolog

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si existe archivo o directorio no se reescribe
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Todo debe pasar primero por index.php
+RewriteRule ^ index.php [L]

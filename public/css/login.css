@@ -1,0 +1,17 @@
+.logo-gdc {
+    background: var(--color_white);
+    width: 255px;
+    height: 255px;
+    border: 10px solid var(--color_dark_blue);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-gdc img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
