@@ -7,6 +7,7 @@ namespace App\Services;
 use App\Models\User;
 use Core\Service;
 use Core\Session;
+use Core\PasswordHasher;
 
 final class AuthService extends Service
 {
@@ -16,7 +17,7 @@ final class AuthService extends Service
             $userModel = new User();
             try {
                   // Obtenemos el usuario por su nombre de usuario
-                  $user = $userModel->findGeneral(['id', 'username', 'password_hash', 'is_active'], ['username' => $username, 'deleted_at' => null]);
+                  $user = $userModel->findGeneral(['id', 'role_id', 'username', 'password_hash', 'is_active'], ['username' => $username, 'deleted_at' => null]);
                   if (!$user) {
                         throw new \Exception('Usuario no registrado', 404);
                   }
@@ -26,7 +27,7 @@ final class AuthService extends Service
                   }
 
                   // Verificamos la contraseña
-                  if (!password_verify($password, $user['password_hash'])) {
+                  if (!(new PasswordHasher())->verify($password, $user['password_hash'])) {
                         throw new \Exception('Credenciales inválidas', 401);
                   }
 

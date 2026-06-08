@@ -14,6 +14,20 @@ final class AdminController extends Controller
       /** Vista - Muestra el formulario de inicio de sesión */
       public function index(): void
       {
+            $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
+            $this->view()->addStyle('admin/styles.css');
+            $this->view()->addScript('admin/scripts.js');
+            $this->render();
+      }
+
+      /** Vista - Muestra el datatable de certificaciones */
+      public function certifications(): void
+      {
+            $this->view()->addLibStyle('datatables/datatables.min.css');
+            $this->view()->addLibScript('datatables/datatables.min.js');
+            $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
+            $this->view()->addStyle('admin/styles.css');
+            $this->view()->addScript('admin/scripts.js');
             $this->render();
       }
 
