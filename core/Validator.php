@@ -483,6 +483,14 @@ final class Validator
                 }
                 return true;
 
+            case 'date':
+                if (!is_string($value) || strtotime($value) === false) {
+                    $this->addError($field, 'date', "The {$field} must be a valid date.");
+                    return false;
+                }
+
+                return true;
+
             default:
                 // Regla desconocida
                 $this->addError($field, $name, "The {$field} has an invalid rule: {$name}.");

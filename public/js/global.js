@@ -119,11 +119,6 @@ function showModal(modalId) {
    modal.show();
 }
 
-// Carga previa de información al DOM
-$(document).ready(function () {
-   getAsideMenu();
-});
-
 // Sección de eventos
 
 // Sección para mostrar el loader al utilizar ajax y ocultarlo al finalizar la petición

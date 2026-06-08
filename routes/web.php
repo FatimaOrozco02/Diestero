@@ -6,7 +6,7 @@ use Core\Router;
 use App\Middlewares\GuestMiddleware;
 use App\Middlewares\AuthMiddleware;
 use App\Middlewares\CsrfMiddleware;
-
+use Core\Config;
 
 // Rutas sin autenticación
 $router->get("/", "HomeController@index");
@@ -37,16 +37,32 @@ $router->group(['prefix' => 'admin'], function (Router $router) {
       $router->group(['middlewares' => [AuthMiddleware::class]], function (Router $router) {
             // Certificados
             $router->group(['prefix' => '/certificaciones'], function (Router $router) {
-                  $router->get('', 'CertificationController@index');
+                  $router->get('', 'AdminController@certifications');
+                  $router->get('/crear', 'CertificationController@create');
                   $router->get('/data', 'CertificationController@getTableData');
-                  $router->get('/{certification_id}/data', 'CertificationController@getDetail');
+                  $router->get('/{certification_id}/actualizar', 'CertificationController@show');
+                  $router->get('/{certification_id}/ver', 'CertificationController@view');
                   $router->get('/{certification_id}/descarga', 'CertificationController@download');
+                  $router->get('/{certification_id}/data', 'CertificationController@getDetail');
                   $router->post('', 'CertificationController@store', [CsrfMiddleware::class]);
                   $router->put('/{certification_id}', 'CertificationController@update', [CsrfMiddleware::class]);
                   $router->delete('/{certification_id}', 'CertificationController@destroy', [CsrfMiddleware::class]);
             });
 
             // Cerrar sesión
-            $router->post('/cerrar_sesion', 'AdminController@logout', [CsrfMiddleware::class]);
+            $router->get('/cerrar_sesion', 'AdminController@logout');
       });
 });
+
+// Archivos
+$router->group(['prefix' => 'media'], function (Router $router) {
+      $router->get('/certificaciones/{certification_id}', 'MediaController@certification');
+      $router->get('/firmas/{certification_id}', 'MediaController@signature');
+});
+
+// Pruebas
+if (Config::get('app.debug')) {
+      $router->group(['prefix' => 'try/'], function (Router $router) {
+            $router->get('password', 'TryController@password');
+      });
+}

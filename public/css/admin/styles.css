@@ -1,0 +1,49 @@
+/* Variables */
+:root {
+  --main: #8d3c45;
+  --main-alt: #b24c5a;
+  --main-2: #1e355e;
+}
+
+/*JQuery Validator*/
+.is-invalid,
+.error {
+  color: var(--bs-danger) !important;
+}
+
+/*Text Colors*/
+.text-main {
+  color: var(--main);
+}
+
+.text-main-2 {
+  color: var(--main-2);
+}
+
+/*Background Colors*/
+.bg-main {
+  background-color: var(--main) !important;
+}
+
+.bg-main-2 {
+  background-color: var(--main-2) !important;
+}
+
+/*Buttons*/
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main);
+  --bs-btn-border-color: var(--main);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--main-alt);
+  --bs-btn-hover-border-color: var(--main-alt);
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--main-alt);
+  --bs-btn-active-border-color: var(--main-alt);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--main);
+  --bs-btn-disabled-border-color: var(--main);
+  --bs-btn-disabled-opacity: 0.7;
+}

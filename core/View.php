@@ -43,7 +43,7 @@ final class View
        Assets Management
     ============================= */
 
-   public function addLibStyles(string $href): self
+   public function addLibStyle(string $href): self
    {
       $href = trim($href);      
       if ($href !== '') {
@@ -67,7 +67,6 @@ final class View
 
    public function addLibScript(string $href): self
    {
-      Log::createLog()->info("Adding lib script: $href");
       $href = trim($href);
       if ($href !== '') {
          $this->libScripts[] = 'lib/' . $href;
@@ -111,8 +110,7 @@ final class View
       $title = Config::get('app.name');
       $sessionUser = Session::get('user');
       $sessionUserId = ($sessionUser && $sessionUser['id']) ?? $sessionUser['id'];
-      $sessionUserProfileId = ($sessionUser && $sessionUser['profile_id']) ?? $sessionUser['profile_id'];
-      $sessionLayoutAside = Session::get("layout_aside") ?? false;
+      $sessionUserRoleId = ($sessionUser && $sessionUser['role_id']) ?? $sessionUser['role_id'];
 
       $libStyles = $this->libStyles;
       $styles = $this->styles;

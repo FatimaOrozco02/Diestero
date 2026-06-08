@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use App\Services\AuthService;
+use Core\Config;
 use Core\Controller;
 use Core\Validator;
 use Core\Session;
@@ -14,6 +15,20 @@ final class AdminController extends Controller
       /** Vista - Muestra el formulario de inicio de sesión */
       public function index(): void
       {
+            $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
+            $this->view()->addStyle('admin/styles.css');
+            $this->view()->addScript('admin/scripts.js');
+            $this->render(null, ['noHeader' => true]);
+      }
+
+      /** Vista - Muestra el datatable de certificaciones */
+      public function certifications(): void
+      {
+            $this->view()->addLibStyle('datatables/datatables.min.css');
+            $this->view()->addLibScript('datatables/datatables.min.js');
+            $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
+            $this->view()->addStyle('admin/styles.css');
+            $this->view()->addScript('admin/scripts.js');
             $this->render();
       }
 
@@ -46,6 +61,7 @@ final class AdminController extends Controller
       public function logout(): void
       {
             Session::destroy();
-            $this->response->successJson('Sesión cerrada correctamente', null, 200);
+            $this->response->redirect(Config::get('app.url') . "/admin");
+            // $this->response->successJson('Sesión cerrada correctamente', null, 200);
       }
 }

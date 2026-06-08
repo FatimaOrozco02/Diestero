@@ -26,16 +26,6 @@ abstract class Controller
       return $this->view;
    }
 
-   protected function addLibStyle(string $href): self {
-      $this->view()->addLibStyles($href);
-      return $this;
-   }
-
-   protected function addLibScript(string $href): self {
-      $this->view()->addLibScript($href);
-      return $this;
-   }
-
    /**
     * Renderiza una plantilla + vista basado en el controlador/metodo
     */
