@@ -93,20 +93,6 @@
       <script src="<?= asset(e($script)) ?>"></script>
    <?php endforeach; ?>
 
-   <?php if (!isset($sessionUser) || $sessionUser['profile_id'] == 5): ?>
-      <!-- START Botmaker Webchat-->
-      <script>
-         (function() {
-            let js = document.createElement('script');
-            js.type = 'text/javascript';
-            js.async = 1;
-            js.src = 'https://go.botmaker.com/rest/webchat/p/XWXT81GVKE/init.js';
-            document.body.appendChild(js);
-         })();
-      </script>
-      <!-- END Botmaker Webchat-->
-   <?php endif; ?>
-
 </body>
 
 </html>

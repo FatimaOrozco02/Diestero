@@ -74,6 +74,24 @@ abstract class Model
 
       return Database::fetchAll($sql, [], $this->connectionName());
    }
+   
+   /**
+    * SELECT, para catálogos con deleted_at.
+    */
+   public function getSoftActiveRecords(): array
+   {
+      $sql = sprintf(
+         'SELECT %s, %s FROM %s WHERE %s AND %s IS NULL ORDER BY %s ASC',
+         $this->pk(),
+         $this->sanitizeIdentifier('name'),
+         $this->table(),
+         $this->sanitizeIdentifier('is_active'),
+         $this->sanitizeIdentifier('deleted_at'),
+         $this->sanitizeIdentifier('name')
+      );
+
+      return Database::fetchAll($sql, [], $this->connectionName());
+   }
 
    public function getById(int|string $id): ?array {
       $sql = sprintf(
@@ -105,6 +123,26 @@ abstract class Model
       );
 
       return Database::fetch($sql, [$id], $this->connectionName());
+   }
+
+   /** SELECT general de un registro */
+   public function findGeneral(array $fields = ['*'], array $where = [], ?string $orderBy = null): ?array
+   {
+      $select = $this->buildSelectFields($fields);
+      $sql = "SELECT {$select} FROM {$this->table()}";
+      $params = [];
+
+      if (!empty($where)) {
+         $whereClause = $this->buildWhere($where);
+         $sql .= " WHERE {$whereClause['sql']}";
+         $params = $whereClause['params'];
+      }
+
+      if ($orderBy !== null && trim($orderBy) !== '') {
+         $sql .= ' ORDER BY ' . $this->sanitizeOrderBy($orderBy);
+      }
+
+      return Database::fetch($sql, $params, $this->connectionName());
    }
 
    /**
