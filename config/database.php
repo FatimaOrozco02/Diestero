@@ -7,11 +7,11 @@ return [
     "connections" => [
         "main" => [
             "driver" => "pgsql",
-            "host" => "10.10.10.74",
+            "host" => "localhost",
             "port" => "5432",
-            "database" => "BD_GDC",
-            "username" => "Timone2020",
-            "password" => "T1m0n3$2020",
+            "database" => "db2qkw7yvikgzg",
+            "username" => "uzwbngmjppucg",
+            "password" => "28qgbhvf2jpt",
             "charset" => "utf8",
         ]
     ]

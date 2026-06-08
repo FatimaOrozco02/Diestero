@@ -2,12 +2,10 @@
 
 declare(strict_types=1);
 
-use Core\Log;
-
 use Core\Router;
-use App\Middlewares\CsrfMiddleware;
+use App\Middlewares\GuestMiddleware;
 use App\Middlewares\AuthMiddleware;
-use App\Middlewares\ProfileMiddleware;
+use App\Middlewares\CsrfMiddleware;
 
 
 // Rutas sin autenticación
@@ -25,3 +23,30 @@ $router->get('/soluciones_estrategicas', 'HomeController@solutions');
 $router->get('/cfoaas', 'HomeController@cfoaas');
 $router->get('/socios', 'HomeController@partners');
 $router->get('/contacto', 'HomeController@contact');
+
+
+// Admin
+$router->group(['prefix' => 'admin'], function (Router $router) {
+      // Sin autenticar
+      $router->group(['middlewares' => [GuestMiddleware::class]], function (Router $router) {
+            $router->get('', 'AdminController@index');
+            $router->post('/login', 'AdminController@login', [CsrfMiddleware::class]);
+      });
+
+      // Admin autenticado
+      $router->group(['middlewares' => [AuthMiddleware::class]], function (Router $router) {
+            // Certificados
+            $router->group(['prefix' => '/certificaciones'], function (Router $router) {
+                  $router->get('', 'CertificationController@index');
+                  $router->get('/data', 'CertificationController@getTableData');
+                  $router->get('/{certification_id}/data', 'CertificationController@getDetail');
+                  $router->get('/{certification_id}/download', 'CertificationController@download');
+                  $router->post('', 'CertificationController@store', [CsrfMiddleware::class]);
+                  $router->put('/{certification_id}', 'CertificationController@update', [CsrfMiddleware::class]);
+                  $router->delete('/{certification_id}', 'CertificationController@destroy', [CsrfMiddleware::class]);
+            });
+
+            // Cerrar sesión
+            $router->post('/logout', 'AdminController@logout', [CsrfMiddleware::class]);
+      });
+});
