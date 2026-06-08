@@ -33,7 +33,7 @@ $(document).ready(() => {
          { data: 'start_date' },
          { data: 'end_date' },
          { data: 'is_active', render: (data) => { return (data) ? 'Activo' : 'Inactivo'; } },
-         { data: 'created_at', render: (data) => { return formatDateToYmdHis(data); } },
+         { data: 'created_at', render: (data) => { return formatDate(data); } },
          {
             data: 'id', render: (data, col, row) => {
                return `

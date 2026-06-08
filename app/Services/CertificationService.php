@@ -23,6 +23,7 @@ final class CertificationService extends Service
             $certificationId = null;
             $certificationCode = null;
             $certifyId = null;
+            $signature = null;
 
             // Calculos de tiempo
             $tz = new \DateTimeZone('America/Mexico_City');
@@ -36,27 +37,30 @@ final class CertificationService extends Service
             ];
 
             // Calculo para día de inicio
+            $startDateObject = null;
             if (!empty($data['start_date'])) {
-                  $certificationData['start_date'] = new \DateTimeImmutable($data['start_date']);
+                  $startDateObject = new \DateTimeImmutable($data['start_date'], $tz);
             } else {
                   $days = rand(15, 150);
-                  $certificationData['start_date'] =  $today->sub(new \DateInterval("P{$days}D"));
+                  $startDateObject =  $today->sub(new \DateInterval("P{$days}D"));
             }
+            $certificationData['start_date'] = $startDateObject->format('Y-m-d');
 
             // Calculo para día de fin
-            $minEnd = $certificationData['start_date']->add(new \DateInterval('P1Y'));
+            $endDateObject = null;
+            $minEnd = $startDateObject->add(new \DateInterval('P1Y'));
             if (!empty($data['end_date'])) {
-                  $end_date = new \DateTimeImmutable($data['end_date'], $tz);
+                  $endDateObject = new \DateTimeImmutable($data['end_date'], $tz);
 
-                  if ($end_date >= $minEnd) {
-                        $certificationData['end_date'] = $end_date;
+                  if ($endDateObject >= $minEnd) {
+                        $certificationData['end_date'] = $endDateObject->format('Y-m-d');
                   } else {
                         // No cumple mínimo 1 año → usa +3 años desde start
-                        $certificationData['end_date'] = $certificationData['start_date']->add(new \DateInterval('P3Y'));
+                        $certificationData['end_date'] = $startDateObject->add(new \DateInterval('P3Y'))->format('Y-m-d');
                   }
             } else {
                   // Sin end_date → +3 años desde start
-                  $certificationData['end_date'] = $certificationData['start_date']->add(new \DateInterval('P3Y'));
+                  $certificationData['end_date'] = $startDateObject->add(new \DateInterval('P3Y'))->format('Y-m-d');
             }
 
             // Validar si es actualización o creación
@@ -69,13 +73,14 @@ final class CertificationService extends Service
                   $certificationId = $data['id'];
                   $certifyId = $certification['certify_id'];
                   $certificationCode = $certification['code'];
+                  $signature = $certification['signature'];
             } else {
                   $certificationData['certify_id'] = $data['certify_id'];
                   $certifyId = $data['certify_id'];
 
                   // Generación de código
                   $certificationNumber = $certificationModel->count(['certify_id' => $certifyId]) + 1;
-                  $certificationCode = $certificationData['code'] = "DIESTRO_" . Utils::randomString(2) . $certificationData['start_date']->format('ym')  . $certificationNumber . Utils::randomString(2);
+                  $certificationCode = $certificationData['code'] = "DIESTRO_" . Utils::randomString(2) . $startDateObject->format('ym')  . $certificationNumber . Utils::randomString(2);
             }
 
             $certify = (new Certify())->findGeneral(['id', 'shortname', 'template'], ['id' => $certifyId, 'is_active' => true]);
@@ -101,10 +106,12 @@ final class CertificationService extends Service
                   }
 
                   // Carga de firma
-                  if (!empty($data['signature']) && isset($_FILES['signature']) && $_FILES['signature']['error'] === UPLOAD_ERR_OK) {
-                        $signature = "s" . $certificationId . ".png";
+                  if (!empty($data['signature']) && $data['signature']['error'] === UPLOAD_ERR_OK) {
+                        $extension = pathinfo($data['signature']['name'], PATHINFO_EXTENSION);
+                        $signature = "s" . $certificationId . "." . $extension;
 
-                        if (!Utils::uploadFile('signatures/', $_FILES['signature'], $signature)) {
+                        $uploaded = Utils::uploadFile('signatures/', $data['signature'], $signature);
+                        if (!$uploaded) {
                               throw new \Exception("Error al intentar cargar la firma.");
                         }
 
@@ -114,19 +121,20 @@ final class CertificationService extends Service
                   }
 
                   // Creación de PDF
-                  $pdfBase = __DIR__ . '/../assets/' . $certify['template'];   // PDF de base
-                  $pdfSalida = __DIR__ . '/../assets/uploads/certifications/' . $certificationCode . '.pdf'; // PDF resultante
+                  $storagePath = __DIR__ . '/../../storage/';
+                  $templatePdf = $storagePath . 'templates/certifies/' . $certify['template'];   // PDF de base
+                  $certificationPdf = $storagePath . 'uploads/certifications/' . $certificationCode . '.pdf'; // PDF resultante
 
                   // Eliminamos el certificado anterior
-                  if ($isUpdate && is_file($pdfSalida)) {
-                        unlink($pdfSalida);
+                  if ($isUpdate && is_file($certificationPdf)) {
+                        unlink($certificationPdf);
                   }
 
                   // Crear instancia FPDI+TCPDF
                   $pdf = new Fpdi();
 
                   // Importar página del PDF base
-                  $pdf->setSourceFile($pdfBase);
+                  $pdf->setSourceFile($templatePdf);
                   $tplId = $pdf->importPage(1);
                   $size  = $pdf->getTemplateSize($tplId);
 
@@ -141,30 +149,42 @@ final class CertificationService extends Service
                   $pdf->AddPage($size['orientation'], [$size['width'], $size['height']]);
                   $pdf->useTemplate($tplId);
                   $pageWidth = $size['width'];
+                  $pageHeight = $size['height'];
 
-                  // Configuración de fuente
-                  $pdf->SetFont('helvetica', 'B', 17);
+                  $formatter = new \IntlDateFormatter(
+                        'es_ES',                  // idioma/región
+                        \IntlDateFormatter::LONG, // formato largo (ej: "1 de febrero de 2024")
+                        \IntlDateFormatter::NONE,
+                        'UTC',                    // zona horaria
+                        \IntlDateFormatter::GREGORIAN
+                  );
+
                   $pdf->SetTextColor(40, 40, 40); // negro
-                  $pdf->SetXY(0, 73);
-                  $pdf->Cell(0, 10, $isUpdate ? $certification['institution'] : $certificationData['institution'], 0, 1, 'C');
 
+                  // Institución
+                  $pdf->SetFont('helvetica', 'B', 30);
+                  $pdf->SetXY(35, 62);
+                  $pdf->MultiCell(210, 0, $certificationData['institution'], 0, 'C');
+
+                  // Código
                   $pdf->SetFont('helvetica', '', 10);
-                  $pdf->SetTextColor(99, 99, 99); // gris
+                  $pdf->SetXY(110, 111.5);
+                  $pdf->Cell(100, 0,  $isUpdate ? $certification['code'] : $certificationData['code'], 0, 1, 'L');
 
-                  $pdf->SetXY(37, 91);
-                  $pdf->MultiCell(135, 6, $isUpdate ? $certification['address'] : $certificationData['address'], 0, 'C', false);
+                  // Dirección
+                  $pdf->SetFont('helvetica', '', 10);
+                  $pdf->SetXY(110, 118.5);
+                  $pdf->MultiCell(130, 0, $certificationData['address'], 0, 'L', false);
 
+                  // Contenido
                   $pdf->setCellHeightRatio(1.0); // compacta todo
-                  $pdf->SetFont('helvetica', '', 11);
-                  $pdf->SetTextColor(40, 40, 40); // negro
-
-                  $contentY = 103;
+                  $pdf->SetFont('helvetica', '', 12);
                   $pdf->writeHTMLCell(
-                        190, // ancho
+                        200, // ancho
                         0,   // alto (0 = autoajustable)
-                        14,  // X
-                        $contentY,  // Y
-                        $isUpdate ? $certification['content'] : $certificationData['content'],
+                        45,  // X
+                        130,  // Y
+                        $certificationData['content'],
                         0,   // borde
                         1,   // salto de línea
                         0,   // fill
@@ -173,43 +193,27 @@ final class CertificationService extends Service
                         true // autopadding
                   );
 
-                  $formatter = new \IntlDateFormatter(
-                        'es_ES',                  // idioma/región
-                        \IntlDateFormatter::LONG, // formato largo (ej: "1 de febrero de 2024")
-                        \IntlDateFormatter::NONE,
-                        'UTC',                    // zona horaria (ajusta si necesitas)
-                        \IntlDateFormatter::GREGORIAN
-                  );
-
+                  // Fecha de inicio
                   $pdf->SetFont('helvetica', 'B', 10);
-                  $pdf->SetTextColor(38, 84, 138); // azul
-                  $datesY = 217.5;
-                  $pdf->SetXY(81, $datesY);
-                  $pdf->Cell(0, 10, $formatter->format($isUpdate ? $certification['start_date'] : $certificationData['start_date']), 0, 1, '');
+                  $pdf->SetXY(70, 165);
+                  $pdf->Cell(0, 0, $formatter->format($certificationData['start_date']), 0, 1, '');
 
-                  $pdf->SetXY(147, $datesY);
-                  $pdf->Cell(0, 10, $formatter->format($isUpdate ? $certification['end_date'] : $certificationData['end_date']), 0, 1, '');
+                  // Fecha de fin
+                  $pdf->SetXY(75, 170);
+                  $pdf->Cell(0, 0, $formatter->format($certificationData['end_date']), 0, 1, '');
 
-                  $pdf->SetFont('helvetica', 'B', 10);
-                  $certifierY = 245;
-                  if (in_array($isUpdate ? $certification['certify_id'] : $certificationData['certify_id'], [6])) {
-                        $certifierY = 248;
-                  }
-                  $pdf->SetXY(0, $certifierY);
-                  $pdf->Cell(0, 10, $isUpdate ? $certification['certifier'] : $certificationData['certifier'], 0, 1, 'C');
+                  // Certificador
+                  $pdf->SetFont('helvetica', 'B', 13);
+                  $pdf->SetXY($pageWidth - 85, 185);
+                  $pdf->Cell(60, 0, $certificationData['certifier'], 0, 1, 'C');
 
-                  $pdf->SetFont('helvetica', 'B', 11);
-                  $pdf->SetTextColor(40, 40, 40); // negro
-                  $pdf->SetXY(0, 252);
-                  $codeAlign = 'C';
-                  $pdf->Cell(0, 10,  $isUpdate ? $certification['code'] : $certificationData['code'], 0, 1, $codeAlign);
-
-                  if (!empty($isUpdate ? $certification['signature'] : $certificationData['signature'])) {
-                        $pdf->Image("assets/uploads/signatures/" . ($isUpdate ? $certification['signature'] : $certificationData['signature']), (($pageWidth - 30) / 2), 230, 30, 0, 'PNG');
+                  // Firma
+                  if (!empty($signature)) {
+                        $pdf->Image($storagePath . "uploads/signatures/" . $signature, $pageWidth - 70, 160, 30, 0, 'PNG');
                   }
 
                   // Guardar PDF
-                  $pdf->Output($pdfSalida, 'F');
+                  $pdf->Output($certificationPdf, 'F');
 
                   Database::commit();
 

@@ -20,15 +20,9 @@ final class Utils
             return $out;
       }
 
-      public static function uploadFile(
-            string $directory,
-            array $file,
-            ?string $fileName = null,
-            bool $replace = true,
-            ?int $maxSize = null,
-            array $allowedMimeTypes = []
-      ): bool {
-            $baseDir = dirname(__DIR__, 2) . '/storage/uploads/' . trim($directory, '/');
+      public static function uploadFile(string $directory, array $file, ?string $fileName = null, bool $replace = true, ?int $maxSize = null, array $allowedMimeTypes = []): bool
+      {
+            $baseDir = dirname(__DIR__, 1) . '/storage/uploads/' . trim($directory, '/');
             $targetName = $fileName ?: basename((string)($file['name'] ?? ''));
             $targetPath = $baseDir . '/' . $targetName;
 
@@ -55,7 +49,9 @@ final class Utils
                   mkdir($baseDir, 0777, true);
             }
 
-            return move_uploaded_file($file['tmp_name'], $targetPath);
+            $result = move_uploaded_file($file['tmp_name'], $targetPath);
+
+            return $result;
       }
 
       public static function removeDirectory(string $path): bool

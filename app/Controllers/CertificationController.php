@@ -30,7 +30,7 @@ final class CertificationController extends Controller
       /** Vista - Actualizar certificación */
       public function show(int $certificationId): void
       {
-            $certification = (new Certification())->findGeneral(['id', 'certify_id', 'code', 'start_date', 'end_date', 'is_active'], ['id' => $certificationId, 'deleted_at' => null]);
+            $certification = (new Certification())->findGeneral(['id', 'certify_id', 'code', 'institution', 'address', 'content', 'certifier', 'start_date', 'end_date', 'signature', 'is_active'], ['id' => $certificationId, 'deleted_at' => null]);
             if (!$certification) {
                   $this->response->errorJson('Certificación no encontrada', null, 404);
                   return;
@@ -106,7 +106,7 @@ final class CertificationController extends Controller
                   'certifier' => 'required|string|min:3|max:100',
                   'start_date' => 'nullable|date',
                   'end_date' => 'nullable|date',
-                  'signature' => 'nullable|file'
+                  'signature' => 'nullable'
             ]);
 
             if ($validator->fails()) {
@@ -118,7 +118,7 @@ final class CertificationController extends Controller
 
             $certification = (new Certification())->findGeneral(['id'], ['id' => $certificationId, 'deleted_at' => null]);
             if (!$certification) {
-                  $this->response->errorJson('Tablero no encontrado', null, 404);
+                  $this->response->errorJson('Certificación no encontrada', null, 404);
                   return;
             }
             $data['id'] = $certification['id'];
