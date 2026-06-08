@@ -16,7 +16,7 @@ final class GuestMiddleware implements Middleware
     {
         $sessionUser = Session::get('user');
         if (!empty($sessionUser['id'])) {
-            $path = 'dashboard';
+            $path = 'admin/certificaciones';
             $response->redirect(Config::get('app.url') . $path);
             return;
         }

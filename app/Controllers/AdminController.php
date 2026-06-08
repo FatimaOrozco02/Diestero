@@ -9,7 +9,7 @@ use Core\Controller;
 use Core\Validator;
 use Core\Session;
 
-final class AuthController extends Controller
+final class AdminController extends Controller
 {
       /** Vista - Muestra el formulario de inicio de sesión */
       public function index(): void

@@ -30,7 +30,7 @@ $router->group(['prefix' => 'admin'], function (Router $router) {
       // Sin autenticar
       $router->group(['middlewares' => [GuestMiddleware::class]], function (Router $router) {
             $router->get('', 'AdminController@index');
-            $router->post('/login', 'AdminController@login', [CsrfMiddleware::class]);
+            $router->post('/inicio_sesion', 'AdminController@login', [CsrfMiddleware::class]);
       });
 
       // Admin autenticado
@@ -40,13 +40,13 @@ $router->group(['prefix' => 'admin'], function (Router $router) {
                   $router->get('', 'CertificationController@index');
                   $router->get('/data', 'CertificationController@getTableData');
                   $router->get('/{certification_id}/data', 'CertificationController@getDetail');
-                  $router->get('/{certification_id}/download', 'CertificationController@download');
+                  $router->get('/{certification_id}/descarga', 'CertificationController@download');
                   $router->post('', 'CertificationController@store', [CsrfMiddleware::class]);
                   $router->put('/{certification_id}', 'CertificationController@update', [CsrfMiddleware::class]);
                   $router->delete('/{certification_id}', 'CertificationController@destroy', [CsrfMiddleware::class]);
             });
 
             // Cerrar sesión
-            $router->post('/logout', 'AdminController@logout', [CsrfMiddleware::class]);
+            $router->post('/cerrar_sesion', 'AdminController@logout', [CsrfMiddleware::class]);
       });
 });
