@@ -1,5 +1,4 @@
 <div class="w-100 bg-white">
-
     <!-- 1. SECCIÓN IMAGEN PRINCIPAL -->
     <section class="hero-image-section w-100 position-relative banner-fortaleza" style="max-height: 500px; overflow: hidden;">
 
@@ -28,7 +27,6 @@
             </div>
         </div>
     </section>
-
     
     <!-- 3. SECCIÓN ¿QUÉ HACEMOS?  -->
 <section id="que-hacemos" class="mx-auto" style="max-width: 1440px; width: 100%; background-color: #f4f6f8; font-family: sans-serif;">
@@ -40,7 +38,6 @@
         </div>
 
         <div class="row  align-items-center">
-
            
             <div class="col-12 col-md-7 text-muted" style="font-size: 0.92rem; line-height: 1.6;">
                 <p class="mb-3">
@@ -92,7 +89,6 @@
     </div>
 </section>
 
-
     <!-- 4. SECCIÓN TRAYECTORIA -->
     <section id="trayectoria" class="bg-white mx-auto" style="max-width: 1440px; width: 100%;">
         <div class="container-fluid px-5 py-5">
@@ -125,7 +121,7 @@
     <!-- 5. SECCIÓN FORTALECIMIENTO DE NEGOCIOS -->
     <section id="fortalecimiento" class="mx-auto" style="max-width: 1440px; width: 100%; background-color: #f4f6f8;">
         <div class="container-fluid px-5 py-5">
-            <div class="text-center mb-4">
+            <div class="text-center">
                 <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">FORTALECIMIENTO DE NEGOCIOS</h2>
                 <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">FORTALECEMOS NEGOCIOS, IMPULSAMOS CRECIMIENTO</h6>
             </div>
@@ -170,7 +166,6 @@
                 <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">CASOS DE ÉXITO</h2>
                 <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">EMPRESAS QUE HAN CONFIADO EN DIESTRO</h6>
             </div>
-            
             <div id="contenedor-logos" class="row align-items-center justify-content-center g-5 mb-4" style="min-height: 100px;">
                 
             </div>

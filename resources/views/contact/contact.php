@@ -24,7 +24,7 @@
                 </div>
 
                 
-                <div class="row g-4 align-items-stretch" style="min-height: 500px;">
+                <div class="row g-4 align-items-stretch " style="min-height: 500px;">
 
                     <!-- Columna Izquierda: Imagen Adaptativa -->
                     <div class="col-12 col-md-6 position-relative">

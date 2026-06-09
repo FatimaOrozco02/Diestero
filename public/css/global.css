@@ -133,7 +133,6 @@ h4, h5, h6, a, .subtitulo {
     }
 }
 
-
 @media (min-width: 2500px) {
     .banner-fortaleza {
         
@@ -144,6 +143,122 @@ h4, h5, h6, a, .subtitulo {
         height: 600px !important;
         
         object-position: center 25% !important;
+    }
+}
+
+.benefits-img-container {
+    height: 480px;
+}
+
+.benefits-text-content {
+    max-width: 650px;
+}
+
+
+
+@media (max-width: 767px) {
+    
+    
+    section.hero-image-section.banner-fortaleza,
+    section.hero-image-section {
+        max-height: 240px !important;
+        height: 240px !important;
+        overflow: hidden !important;
+    }
+
+    
+    section.hero-image-section.banner-fortaleza img,
+    section.hero-image-section img {
+        height: 100% !important;
+        max-height: 240px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+        object-position: center center !important; 
+    }
+
+    
+    div.benefits-img-container,
+    div.benefits-img-container img {
+        height: 220px !important;
+        max-height: 220px !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    }
+
+    
+    div.benefits-text-content {
+        max-width: 100% !important;
+        padding: 2.5rem 1.2rem !important;
+        margin: 0 !important;
+    }
+}
+
+
+@media (max-width: 767px) {
+    
+    
+    #somos .container-fluid,
+    #que-hacemos .container-fluid,
+    #trayectoria .container-fluid,
+    #fortalecimiento .container-fluid {
+        padding-left: 1.2rem !important;  
+        padding-right: 1.2rem !important; 
+        padding-top: 3rem !important;     
+        padding-bottom: 3rem !important;
+    }
+
+    #somos h2,
+    #que-hacemos h2,
+    #trayectoria h2,
+    #fortalecimiento h2 {
+        font-size: 1.65rem !important; 
+        line-height: 1.3 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    #somos h6,
+    #que-hacemos h6,
+    #trayectoria h6,
+    #fortalecimiento h6 {
+        font-size: 0.95rem !important; 
+        line-height: 1.4 !important;
+        margin-bottom: 2.5rem !important;
+    }
+
+    #que-hacemos .row,
+    #trayectoria .row {
+        gap: 2rem !important; 
+    }
+
+    #que-hacemos .overflow-hidden {
+        aspect-ratio: 4 / 3 !important; 
+        max-height: 280px !important;
+    }
+
+    #trayectoria img {
+        max-height: 250px !important; 
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+@media (min-width: 2000px) {
+    
+    .benefits-img-container {
+        height: 600px;
+    }
+    
+    .benefits-text-content {
+        max-width: 750px;
+        margin-left: 80px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .benefits-img-container {
+        height: 250px; 
     }
 }
 

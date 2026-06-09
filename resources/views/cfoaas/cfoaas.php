@@ -1,7 +1,4 @@
-
-
 <div class="w-100 bg-white">
-
     <!-- 1. BANNER DE BIENVENIDA  -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
@@ -76,55 +73,53 @@
         </section>
 
         <!-- 5. SECCIÓN BENEFICIOS CLAVE  -->
-        <section style="background-color: #f4f6f8;" class="py-4">
-            <div class="container-fluid px-3 px-md-5">
-                <div class="row align-items-center g-4">
-                    
-                    
-                    <div class="col-12 col-md-5">
-                        <div class="shadow-sm rounded overflow-hidden mx-auto" style="max-height: 280px; aspect-ratio: 4 / 3; max-width: 400px;">
+        <section style="background-color: #f4f6f8;" class="w-100 p-0 overflow-hidden benefits-split-section">
+
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-12 col-md-5 col-xl-5">
+                        <div class="w-100 benefits-img-container">
                             <img src="<?php echo $baseUrl ?>img/close-up-workplace copia_1200px.jpg" alt="Beneficios CFOaaS" class="w-100 h-100 d-block object-fit-cover">
                         </div>
                     </div>
-
-                    
-                    <div class="col-12 col-md-7 text-muted">
-                        <h3 class="text-uppercase mb-3" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 0.5px;">BENEFICIOS CLAVE</h3>
-                        <ul class="list-unstyled d-flex flex-column gap-2 m-0" style="font-size: 0.95rem; line-height: 1.6;">
-                            <li class="d-flex align-items-start gap-2">
-                                <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Mayor control financiero y visibilidad del negocio</span>
-                            </li>
-                            <li class="d-flex align-items-start gap-2">
-                                <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Decisiones mejor informadas y oportunas</span>
-                            </li>
-                            <li class="d-flex align-items-start gap-2">
-                                <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Optimización de liquidez y EBITDA</span>
-                            </li>
-                            <li class="d-flex align-items-start gap-2">
-                                <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Reducción de riesgos operativos y financieros</span>
-                            </li>
-                            <li class="d-flex align-items-start gap-2">
-                                <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Acceso a fuentes de financiamiento y relación con inversionistas</span>
-                            </li>
-                        </ul>
+                    <div class="col-12 col-md-7 col-xl-7 text-muted">
+                        <div class="benefits-text-content px-4 py-5 mx-auto mx-md-5">
+                            <h3 class="text-uppercase mb-4" style="color: #8D3C45; font-size: 1.6rem; letter-spacing: 0.5px;">BENEFICIOS CLAVE</h3>
+                            <ul class="list-unstyled d-flex flex-column gap-3 m-0" style="font-size: 1.05rem; line-height: 1.6;">
+                                <li class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Mayor control financiero y visibilidad del negocio</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Decisiones mejor informadas y oportunas</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Optimización de liquidez y EBITDA</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Reducción de riesgos operativos y financieros</span>
+                                </li>
+                                <li class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Acceso a fuentes de financiamiento y relación con inversionistas</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </section>
 
-                <!-- 6. SECCIÓN TARJETA: ¿PARA QUIÉN ES?  -->
+        <!-- 6. SECCIÓN TARJETA: ¿PARA QUIÉN ES?  -->
         <section class="py-4 bg-white">
             <div class="container-fluid px-3 px-md-5">
                 <div class="mx-auto bg-white shadow-sm" style="max-width: 800px; border: 2px solid #1E355E; overflow: hidden; border-radius: 4px;">
-                    
-                    <!-- Cabecera de la tarjeta: Fondo azul claro tenue -->
+
                     <div class="px-4 py-3 border-bottom">
                         <h3 class="m-0 text-uppercase" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 0.5px;">
                             ¿PARA QUIÉN ES?
                         </h3>
                     </div>
-                    
+
                     <div class="p-4" style="background-color: #F4F6F8; border-color: #1E355E !important;">
                         <ul class="list-unstyled text-muted d-flex flex-column gap-3 m-0" style="font-size: 0.95rem; line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
@@ -145,7 +140,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -153,13 +148,13 @@
         <!-- 7. SECCIÓN RESULTADO -->
         <section class="py-4" style="background-color: #F4F6F8;">
             <div class="container-fluid px-3 px-md-5  text-center">
-                
+
                 <div class="mb-3">
                     <h2 class="text-uppercase m-0" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 1px;">
                         RESULTADO
                     </h2>
                 </div>
-                
+
                 <div class="row justify-content-center m-0">
                     <div class="col-12 p-0" style="max-width: 900px; color: #1E355E;">
                         <p class="m-0 lh-base" style="font-size: 1.5rem; font-family: 'Novecentowide-Normal', sans-serif;">
@@ -167,11 +162,9 @@
                         </p>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
-    </div> 
-</div> 
-
-
+    </div>
+</div>
