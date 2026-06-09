@@ -61,7 +61,7 @@ final class AdminController extends Controller
       public function logout(): void
       {
             Session::destroy();
-            $this->response->redirect(Config::get('app.url') . "/admin");
+            $this->response->redirect(Config::get('app.url') . "admin");
             // $this->response->successJson('Sesión cerrada correctamente', null, 200);
       }
 }
