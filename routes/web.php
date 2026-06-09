@@ -38,7 +38,7 @@ $router->group(['prefix' => 'admin'], function (Router $router) {
             // Certificados
             $router->group(['prefix' => '/certificaciones'], function (Router $router) {
                   $router->get('', 'AdminController@certifications');
-                  $router->get('crear', 'CertificationController@create');
+                  $router->get('/crear', 'CertificationController@create');
                   $router->get('/data', 'CertificationController@getTableData');
                   $router->get('/{certification_id}/actualizar', 'CertificationController@show');
                   $router->get('/{certification_id}/ver', 'CertificationController@view');
