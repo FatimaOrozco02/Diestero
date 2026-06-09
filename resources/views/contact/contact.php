@@ -1,6 +1,6 @@
 <div class="w-100 bg-white">
 
-    <section class="" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class="container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">Contacto</h1>
@@ -25,9 +25,9 @@
             <div class="row g-0 shadow-sm border" style="min-height: 500px;">
 
                 <div class="col-12 col-md-6  position-relative">
-                    <img src="<?php echo $baseUrl ?>/img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 d-none d-md-block">
+                    <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 d-none d-md-block">
                     <!-- Imagen visible solo en móviles para mantener el diseño adaptativo -->
-                    <img src="<?php echo $baseUrl ?>/img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-auto d-block d-md-none object-fit-cover" style="max-height: 250px;">
+                    <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-auto d-block d-md-none object-fit-cover" style="max-height: 250px;">
                 </div>
 
                 <!-- Columna Derecha: Formulario -->

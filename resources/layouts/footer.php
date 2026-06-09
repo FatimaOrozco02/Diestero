@@ -7,7 +7,7 @@
            
             <div class="col-4 text-start z-1">
                 <div style="max-width: 160px;">
-                   <img src="<?php echo $baseUrl ?>/img/logo diestro_1200px_blanco.png" alt="Diestro Fortalecemos Negocios" class="img-fluid">
+                   <img src="<?php echo $baseUrl ?>img/logo diestro_1200px_blanco.png" alt="Diestro Fortalecemos Negocios" class="img-fluid">
                     
                 </div>
             </div>
@@ -20,7 +20,7 @@
                     mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
                 ">
                     
-                    <img src="<?php echo $baseUrl ?>/img/toro-impulso.jpg" alt="Impulso" class="img-fluid object-fit-contain">
+                    <img src="<?php echo $baseUrl ?>img/toro-impulso.jpg" alt="Impulso" class="img-fluid object-fit-contain">
                 </div>
             </div>
             

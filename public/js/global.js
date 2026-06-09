@@ -50,7 +50,7 @@ function createAlert(type, title, message) {
 //    }
 
 //    $.ajax({
-//       url: `${baseUrl}/api/sections`,
+//       url: `${baseUrl}api/sections`,
 //       method: "GET",
 //       success: function (response) {
 //          response.forEach((section, index) => {

@@ -25,13 +25,13 @@ $("#loginSystem").on("submit", async function(e) {
     };    
 
     $.ajax({
-        url: `${baseUrl}/${action}`,
+        url: `${baseUrl}${action}`,
         method: "POST",
         data: data,
         success: function(response) {
             if (response.authenticated) {
                 createAlert("success", "Inicio de sesión exitoso", "");
-                location.href = `${baseUrl}/leads`;
+                location.href = `${baseUrl}leads`;
             }
         },
         error: function(xhr) {
@@ -47,7 +47,7 @@ $("#loginSystem").on("submit", async function(e) {
 $("#loginOutlook").on("click", function() {
     //window.location.href = 'https://login.microsoftonline.com/0a2e7e32-c8cb-4f9c-83a6-8694cc64bb92/oauth2/v2.0/authorize?client_id=977a9a2b-6f10-4a14-8a45-10813d7b601f&response_type=code&redirect_uri=https://ivette-nonseclusive-renato.ngrok-free.dev/CRM_GDC/inicio&response_mode=query&scope=User.Read.All';
     // $.ajax({
-    //     url: `${baseUrl}/outlock`,
+    //     url: `${baseUrl}outlock`,
     //     method: "GET",
     //     success: function(response) {
             

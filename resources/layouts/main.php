@@ -5,8 +5,8 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title><?= $title ?? "CRM" ?></title>
-      <link rel="stylesheet" href="<?= publicUrl('lib/bootstrap/css/bootstrap.css') ?>">
-      <link rel="stylesheet" href="<?= publicUrl('lib/sweetAlert/sweetalert2.min.css') ?>">
+      <link rel="stylesheet" href="<?= publicUrl('lib/Bootstrap/css/bootstrap.css') ?>">
+      <link rel="stylesheet" href="<?= publicUrl('lib/SweetAlert/sweetalert2.min.css') ?>">
       <link rel="stylesheet" href="<?= publicUrl('lib/fontawesome/css/all.css') ?>">
       <link rel="stylesheet" href="<?= publicUrl('css/global.css') ?>">
 
@@ -36,8 +36,8 @@
             const baseUrl = "<?= $baseUrl ?>";
       </script>
       <script src="<?= publicUrl('lib/jQuery/jquery-4.0.0.min.js') ?>"></script>
-      <script src="<?= publicUrl('lib/bootstrap/js/bootstrap.bundle.js') ?>"></script>
-      <script src="<?= publicUrl('lib/sweetAlert/sweetalert2.all.min.js') ?>"></script>
+      <script src="<?= publicUrl('lib/Bootstrap/js/bootstrap.bundle.js') ?>"></script>
+      <script src="<?= publicUrl('lib/SweetAlert/sweetalert2.all.min.js') ?>"></script>
       <script src="<?= publicUrl('lib/fontawesome/js/all.js') ?>"></script>
       <script src="<?= publicUrl('js/formatter.js') ?>"></script>
       <script src="<?= publicUrl('js/global.js') ?>"></script>
