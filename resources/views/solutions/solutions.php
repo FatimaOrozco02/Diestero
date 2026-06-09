@@ -1,5 +1,5 @@
 <div class="w-100" id="principal">
-    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class=" container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">SOLUCIONES ESTRATÉGICAS</h1>
@@ -69,7 +69,7 @@
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card h-100 border text-center bg-white shadow-sm p-3 interactive-card" style="min-height: 380px; cursor:pointer;" data-target="business">
                 <div class="mb-4 bg-light rounded-top position-relative" style="height: 160px; overflow: visible;">
-                    <img src="<?php echo $baseUrl ?>/img/Impulso Empresarial.jpg" alt="Impulso" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img src="<?php echo $baseUrl ?>img/Impulso Empresarial.jpg" alt="Impulso" class="img-fluid w-100 h-100 object-fit-cover">
                     <div class="position-absolute start-50 translate-middle rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                             style="bottom: -28px; width: 56px; height: 56px; background-color: #1E355E; border: 3px solid #ffffff; z-index: 2;">
                           <i class="fa-brands fa-space-awesome" style="color: #ffffff;"></i>
@@ -116,7 +116,7 @@
 
 <!-- 1. FUSIONES Y ADQUISICIONES -->
 <div class="w-100" id="acquisitions">
-    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class=" container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">Funciones y adquisiciones</h1>
@@ -171,7 +171,7 @@
 
 <!-- 2. CAPITAL Y FINANCIAMIENTO -->
 <div class="w-100" id="financing">
-    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class=" container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">Capital y financinanciamiento</h1>
@@ -213,7 +213,7 @@
 
 <!-- 3. IMPULSO EMPRESARIAL -->
 <div class="w-100" id="business">
-    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class=" container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">Impulso empresarial</h1>
@@ -262,7 +262,7 @@
 
 <!-- 4. PHARMA -->
 <div class="w-100" id="pharma">
-    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="px-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class=" container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">PHARMA</h1>

@@ -202,16 +202,16 @@
 
             <div class="row align-items-center justify-content-center g-5 mb-4">
                 <div class="col-6 col-md-3">
-                    <img src="<?php echo $baseUrl ?>/img/" alt="Mega Label" class="img-fluid object-fit-contain" style="max-height: 70px;">
+                    <img src="<?php echo $baseUrl ?>img/" alt="Mega Label" class="img-fluid object-fit-contain" style="max-height: 70px;">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="<?php echo $baseUrl ?>/img/" alt="CommLogik" class="img-fluid object-fit-contain" style="max-height: 50px;">
+                    <img src="<?php echo $baseUrl ?>img/" alt="CommLogik" class="img-fluid object-fit-contain" style="max-height: 50px;">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="<?php echo $baseUrl ?>/img/" alt="CYSAS" class="img-fluid object-fit-contain" style="max-height: 40px;">
+                    <img src="<?php echo $baseUrl ?>img/" alt="CYSAS" class="img-fluid object-fit-contain" style="max-height: 40px;">
                 </div>
                 <div class="col-6 col-md-3">
-                    <img src="<?php echo $baseUrl ?>/img/" alt="Pinturerias" class="img-fluid object-fit-contain" style="max-height: 45px;">
+                    <img src="<?php echo $baseUrl ?>img/" alt="Pinturerias" class="img-fluid object-fit-contain" style="max-height: 45px;">
                 </div>
             </div>
 

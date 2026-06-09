@@ -1,7 +1,7 @@
 <div class="w-100 bg-white">
 
 
-    <section class="py-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>/img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="py-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
         <div class="container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">CERTIFICACIONES</h1>

@@ -1,10 +1,10 @@
 $(document).ready(function() {
    
     const casosExito = [
-        { img: `${baseUrl}img/Logos empresas casos de exito/l1.jpg`, alt: "Mega Label", height: "70px" },
-        { img: `${baseUrl}img/Logos empresas casos de exito/l2.jpg`, alt: "CommLogik", height: "50px" },
-        { img: `${baseUrl}img/Logos empresas casos de exito/l3.jpg`, alt: "CYSAS", height: "40px" },
-        { img: `${baseUrl}img/Logos empresas casos de exito/l4.jpg`, alt: "Pinturerias", height: "45px" },
+        { img: "${baseUrl}/img/Logos empresas casos de exito/l1.jpg", alt: "Mega Label", height: "70px" },
+        { img: "${baseUrl}/img/Logos empresas casos de exito/l2.jpg", alt: "CommLogik", height: "50px" },
+        { img: "${baseUrl}/img/Logos empresas casos de exito/l3.jpg", alt: "CYSAS", height: "40px" },
+        { img: "${baseUrl}/img/Logos empresas casos de exito/l4.jpg", alt: "Pinturerias", height: "45px" },
         
         { img: `${baseUrl}img/Logos empresas casos de exito/l5.jpg`, alt: "Empresa 5", height: "50px" },
         { img: `${baseUrl}img/Logos empresas casos de exito/l6.jpg`, alt: "Empresa 6", height: "50px" },
