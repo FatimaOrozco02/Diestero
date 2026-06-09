@@ -1,13 +1,11 @@
-// $(document).ready(function() {
-    
-//     $('.nav-custom-link').click(function(e) {
-        
-//         $('.nav-custom-link').css('color', '#1E355E');
-        
-       
-//         $(this).css('color', '#8D3C45');
-//     });
-// });
 
+// CONTROL RESPONSIVO DEL MENÚ DE HAMBURGUESA
+$('.navbar-nav .nav-link').click(function() {
+    // Verifica si el botón de hamburguesa está visible (significa que está en móvil)
+    if ($('.navbar-toggler').is(':visible')) {
+        // Ejecuta el cierre del colapsable nativo de Bootstrap
+        $('#navbarNavAltMarkup').collapse('hide');
+    }
+});
 
 

@@ -133,3 +133,43 @@ $(document).ajaxComplete(function (event, jqXHR, settings) {
 $(document).ajaxError(function (event, jqXHR, settings, thrownError) {
    $(".loader-bg").addClass("d-none");
 });
+
+
+// $(document).ready(function() {
+//     $('.navbar-nav .nav-link').on('click', function() {
+//         // Quitamos la clase activa a todos
+//         $('.navbar-nav .nav-link').removeClass('active');
+//         // Se la añadimos únicamente al que se le dio clic para ponerlo rojo
+//         $(this).addClass('active');
+//     });
+// });
+
+
+$(document).ready(function() {
+    
+    let urlActual = window.location.href;
+
+    
+    $('.navbar-nav .nav-link').removeClass('active');
+
+   
+    let coincidenciaEncontrada = false;
+
+   
+    $('.navbar-nav .nav-link').each(function() {
+        let linkHref = $(this).attr('href');
+
+        // Si la URL actual termina con el href del enlace (ej: /contacto o /cfoaas)
+        if (linkHref && urlActual.endsWith(linkHref)) {
+            $(this).addClass('active');
+            coincidenciaEncontrada = true;
+            return false; // Detiene el bucle .each()
+        }
+    });
+
+    
+    if (!coincidenciaEncontrada) {
+        $('.navbar-nav .nav-link').first().addClass('active');
+    }
+});
+
