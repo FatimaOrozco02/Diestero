@@ -64,7 +64,7 @@
          <div id="end_dateHelp" class="form-text">Se recomienda de 1 a 3 años a partir de la fecha de inicio.</div>
       </div>
       <div class="col-12 mb-3 text-center">
-         <a href="<?= $baseUrl ?>admin/certifications" type="button" class="btn btn-secondary">Cancelar</a>
+         <a href="<?= $baseUrl ?>admin/certificaciones" type="button" class="btn btn-secondary">Cancelar</a>
          <button type="submit" id="certificationFormSubmitBtn" class="btn btn-main"><?= !empty($certification) ? 'Actualizar' : 'Crear' ?></button>
       </div>
    </form>
