@@ -9,15 +9,15 @@ use App\Middlewares\CsrfMiddleware;
 use Core\Config;
 
 // Rutas sin autenticación
-$router->get("/", "HomeController@index");
-$router->get("/logout", "AuthController@logout");
+// $router->get("/", "HomeController@index");
+// $router->get("/logout", "AuthController@logout");
 
 
 
 
 
 /*** Público (sin auth) */
-$router->get('/somos', 'HomeController@home');
+$router->get('', 'HomeController@home');
 $router->get('/certificaciones', 'HomeController@certifications');
 $router->get('/soluciones_estrategicas', 'HomeController@solutions');
 $router->get('/cfoaas', 'HomeController@cfoaas');
