@@ -11,7 +11,7 @@
     </section>
 
     <section class="hero-image-section w-100">
-        <img src="<?php echo $baseUrl ?>/img/toros-nuestro equipo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: 500px;">
+        <img src="<?php echo $baseUrl ?>img/toros-nuestro equipo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: 500px;">
     </section>
 
     <section class="bg-white">
@@ -19,7 +19,7 @@
             <div class="row align-items-start border-bottom pt-5 pb-5">
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="overflow-hidden shadow-sm" style="max-width: 260px;">
-                        <img src="<?php echo $baseUrl ?>/img/Oscar.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
+                        <img src="<?php echo $baseUrl ?>img/Oscar.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
                     </div>
                 </div>
                 <div class="col-12 col-md-9 text-muted" style="font-size: 0.92rem; text-align: justify; line-height: 1.6;">
@@ -30,7 +30,7 @@
             <div class="row align-items-start border-bottom  pt-5 pb-5">
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="overflow-hidden shadow-sm" style="max-width: 260px;">
-                        <img src="<?php echo $baseUrl ?>/img/Gabriela.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
+                        <img src="<?php echo $baseUrl ?>img/Gabriela.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
                     </div>
                 </div>
                 <div class="col-12 col-md-9 text-muted" style="font-size: 0.92rem; text-align: justify; line-height: 1.6;">
@@ -50,7 +50,7 @@
             <div class="row align-items-start border-bottom pt-5 pb-5">
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="overflow-hidden shadow-sm" style="max-width: 260px;">
-                        <img src="<?php echo $baseUrl ?>/img/Guillermo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
+                        <img src="<?php echo $baseUrl ?>img/Guillermo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
                     </div>
                 </div>
                 <div class="col-12 col-md-9 text-muted" style="font-size: 0.92rem; text-align: justify; line-height: 1.6;">
@@ -69,7 +69,7 @@
             <div class="row align-items-start border-bottom pt-5 pb-5">
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="overflow-hidden shadow-sm" style="max-width: 260px;">
-                        <img src="<?php echo $baseUrl ?>/img/Guiselle.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
+                        <img src="<?php echo $baseUrl ?>img/Guiselle.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
                     </div>
                 </div>
                 <div class="col-12 col-md-9 text-muted" style="font-size: 0.92rem; text-align: justify; line-height: 1.6;">
@@ -90,7 +90,7 @@
             <div class="row align-items-start pt-5  pb-5">
                 <div class="col-12 col-md-3 mb-4 mb-md-0">
                     <div class="overflow-hidden shadow-sm" style="max-width: 260px;">
-                        <img src="<?php echo $baseUrl ?>/img/Jorge.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
+                        <img src="<?php echo $baseUrl ?>img/Jorge.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: x;">
                     </div>
                 </div>
                 <div class="col-12 col-md-9 text-muted" style="font-size: 0.92rem; text-align: justify; line-height: 1.6;">

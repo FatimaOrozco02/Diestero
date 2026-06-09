@@ -24,7 +24,7 @@
                 <div class="card h-100 border text-center bg-white shadow-sm p-3 interactive-card" style="min-height: 380px; cursor:pointer;" data-target="acquisitions">
 
                     <div class="mb-4 bg-light rounded-top position-relative" style="height: 160px; overflow: visible;">
-                        <img src="<?php echo $baseUrl ?>/img/Fusiones y Adquisiciones.jpg" alt="Fusiones" class="img-fluid w-100 h-100 object-fit-cover">
+                        <img src="<?php echo $baseUrl ?>img/Fusiones y Adquisiciones.jpg" alt="Fusiones" class="img-fluid w-100 h-100 object-fit-cover">
                     
                         <div class="position-absolute start-50 translate-middle rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                             style="bottom: -28px; width: 56px; height: 56px; background-color: #1E355E; border: 3px solid #ffffff; z-index: 2;">
@@ -47,7 +47,7 @@
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card h-100 border text-center bg-white shadow-sm p-3 interactive-card" style="min-height: 380px; cursor:pointer;" data-target="financing">
                 <div class="mb-4 bg-light rounded-top position-relative" style="height: 160px; overflow: visible;">
-                    <img src="<?php echo $baseUrl ?>/img/Capital y Financiamiento.jpg" alt="Capital" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img src="<?php echo $baseUrl ?>img/Capital y Financiamiento.jpg" alt="Capital" class="img-fluid w-100 h-100 object-fit-cover">
                     <div class="position-absolute start-50 translate-middle rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                             style="bottom: -28px; width: 56px; height: 56px; background-color: #1E355E; border: 3px solid #ffffff; z-index: 2;">
                            <i class="fa-solid fa-chart-line" style="color: #ffffff;"></i>
@@ -91,7 +91,7 @@
         <div class="col-12 col-sm-6 col-md-4">
             <div class="card h-100 border text-center bg-white shadow-sm p-3 interactive-card" style="min-height: 380px; overflow: hidden; cursor:pointer;" data-target="pharma">
                 <div class="mb-4 bg-light rounded-top position-relative" style="height: 160px; overflow: visible;">
-                    <img src="<?php echo $baseUrl ?>/img/pharma.jpg" alt="Pharma" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img src="<?php echo $baseUrl ?>img/pharma.jpg" alt="Pharma" class="img-fluid w-100 h-100 object-fit-cover">
                     <div class="position-absolute start-50 translate-middle rounded-circle d-flex align-items-center justify-content-center shadow-sm"
                             style="bottom: -28px; width: 56px; height: 56px; background-color: #1E355E; border: 3px solid #ffffff; z-index: 2;">
                           <i class="fa-solid fa-capsules" style="color: #ffffff;"></i>
@@ -150,7 +150,7 @@
             </div>
             <div class="col-md-5 text-center text-md-start opacity-75">
 
-                <img src="<?php echo $baseUrl ?>/img/bisonte-fusiones copia.jpg" alt="Diestro Trazo" class="img-fluid" style="max-height: 220px;">
+                <img src="<?php echo $baseUrl ?>img/bisonte-fusiones copia.jpg" alt="Diestro Trazo" class="img-fluid" style="max-height: 220px;">
             </div>
         </div>
 
@@ -203,7 +203,7 @@
             </div>
             <div class="col-md-5 text-center text-md-start opacity-75">
 
-                <img src="<?php echo $baseUrl ?>/img/toro-capital.jpg" alt="Diestro Trazo" class="img-fluid" style="max-height: 220px;">
+                <img src="<?php echo $baseUrl ?>img/toro-capital.jpg" alt="Diestro Trazo" class="img-fluid" style="max-height: 220px;">
             </div>
         </div>
     </section>
@@ -250,7 +250,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="w-100 overflow-hidden shadow-sm">
-                    <img src="<?php echo $baseUrl ?>/img/toro-impulso.jpg" alt="Impulso" class="" style="max-height: 900px;">
+                    <img src="<?php echo $baseUrl ?>img/toro-impulso.jpg" alt="Impulso" class="" style="max-height: 900px;">
                 </div>
             </div>
         </div>
@@ -300,7 +300,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="w-100 overflow-hidden shadow-sm ">
-                    <img src="<?php echo $baseUrl ?>/img/toro-pharma.jpg" alt="Impulso" class="" style="max-height: 900px;">
+                    <img src="<?php echo $baseUrl ?>img/toro-pharma.jpg" alt="Impulso" class="" style="max-height: 900px;">
                 </div>
             </div>
         </div>

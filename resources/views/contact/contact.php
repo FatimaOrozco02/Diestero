@@ -25,9 +25,9 @@
             <div class="row g-0 shadow-sm border" style="min-height: 500px;">
 
                 <div class="col-12 col-md-6  position-relative">
-                    <img src="<?php echo $baseUrl ?>/img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 d-none d-md-block">
+                    <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0 d-none d-md-block">
                     <!-- Imagen visible solo en móviles para mantener el diseño adaptativo -->
-                    <img src="<?php echo $baseUrl ?>/img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-auto d-block d-md-none object-fit-cover" style="max-height: 250px;">
+                    <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-auto d-block d-md-none object-fit-cover" style="max-height: 250px;">
                 </div>
 
                 <!-- Columna Derecha: Formulario -->

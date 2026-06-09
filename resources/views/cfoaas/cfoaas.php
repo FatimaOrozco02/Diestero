@@ -25,7 +25,7 @@
             <!-- columna izquierda: imagen  -->
             <div class="col-12 col-md-5">
                 <div class="shadow-sm rounded overflow-hidden" style="max-height: 380px;">
-                    <img src="<?php echo $baseUrl ?>/img/close-up-workplace copia_1200px.jpg" alt="Beneficios CFOaaS" class="img-fluid w-100 h-100 object-fit-cover">
+                    <img src="<?php echo $baseUrl ?>img/close-up-workplace copia_1200px.jpg" alt="Beneficios CFOaaS" class="img-fluid w-100 h-100 object-fit-cover">
                 </div>
             </div>
 

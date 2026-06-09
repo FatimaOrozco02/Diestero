@@ -3,7 +3,7 @@
     <!-- 1. SECCIÓN IMAGEN PRINCIPAL -->
     <section class="hero-image-section w-100">
 
-        <img src="<?php echo $baseUrl ?>/img/banner-Principal inicio-toro fortaleza-1.jpg" alt="Fortaleza" class="w-100 d-block object-fit-cover" style="max-height: 500px;">
+        <img src="<?php echo $baseUrl ?>img/banner-Principal inicio-toro fortaleza-1.jpg" alt="Fortaleza" class="w-100 d-block object-fit-cover" style="max-height: 500px;">
     </section>
 
     <!-- 2. SECCIÓN SOMOS -->
@@ -87,7 +87,7 @@
 
                 <div class="col-md-6">
 
-                    <img src="<?php echo $baseUrl ?>/img/toro-que hacemos.jpg" alt="Qué Hacemos" class="w-100 d-block shadow-sm rounded-1">
+                    <img src="<?php echo $baseUrl ?>img/toro-que hacemos.jpg" alt="Qué Hacemos" class="w-100 d-block shadow-sm rounded-1">
                 </div>
 
             </div>
@@ -109,7 +109,7 @@
 
                 <div class="col-md-5 text-center text-md-start opacity-75">
 
-                    <img src="<?php echo $baseUrl ?>/img/toro-diestro-gris.png" alt="Diestro Trazo" class="img-fluid" style="max-height: 420px;">
+                    <img src="<?php echo $baseUrl ?>img/toro-diestro-gris.png" alt="Diestro Trazo" class="img-fluid" style="max-height: 420px;">
                 </div>
 
 
