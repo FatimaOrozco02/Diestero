@@ -40,20 +40,29 @@
 }
 
 
-body, p, span, li, a, label, input, textarea {
+body, p, span, li,  label, input, textarea {
     font-family: 'MuseoSans-300', sans-serif;
     font-weight: normal;
 }
 
 h1, h2, h3, .titulo-principal {
     font-family: 'Novecentowide-Bold', sans-serif;
-    font-weight: normal; 
+    /* font-weight: normal;  */
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    color: #8D3C45;
 }
 
 
-h4, h5, h6, .subtitulo {
+h4, h5, h6, a, .subtitulo {
     font-family: 'Novecentowide-Normal', sans-serif;
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-weight: 900;
+    color: #1E355E; 
+    font-size:  1rem; 
+    letter-spacing: 0.5px; 
+    
 }
 
 
@@ -103,6 +112,42 @@ h4, h5, h6, .subtitulo {
       height: auto;
    }
 }
+
+/* Se activa únicamente en pantallas más grandes que el contenedor (como pantallas 4K) */
+@media (min-width: 1441px) {
+    .text-md-start {
+       
+        padding-left: calc((100vw - 1440px) / 2 + 3rem) !important;
+        padding-right: calc((100vw - 1440px) / 2 + 3rem) !important;
+    }
+}
+
+
+@media (min-width: 2500px) {
+    .hero-image-section-partners img {
+        
+        max-height: 550px !important; 
+        
+        
+        object-position: center 15% !important; 
+    }
+}
+
+
+@media (min-width: 2500px) {
+    .banner-fortaleza {
+        
+        max-height: 600px !important;
+    }
+
+    .banner-fortaleza img {
+        height: 600px !important;
+        
+        object-position: center 25% !important;
+    }
+}
+
+
 
 
 @keyframes animloader {

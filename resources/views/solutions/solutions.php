@@ -9,18 +9,22 @@
                 </div>
             </div>
         </section>
-        <div class="mx-auto" style="max-width: 1440px;">
+        <div class="mx-auto" style="max-width: 1440px; width: 100%;">
             <div class="w-100">
-                <section class="px-3 px-md-5 py-4">
-
-                    <div class="text-muted text-center text-md-start lh-base mt-2" style="font-size: 0.95rem;">
-                        <p class="mb-4 mx-auto mx-md-0" style="max-width: 900px;">
-                            Diseñamos e impulsamos estrategias financieras que generan valor, crecimiento y oportunidades para tu organización.
-                        </p>
-                    </div>
+                <section >
+                    <div class="container-fluid px-3 px-md-5  pt-5 pb-3">
+                        <div class="mx-auto" style="max-width: 1440px; width: 100%;">
+                            <div class="text-muted lh-base" style="font-size: 0.95rem;">
+                                <p class="mb-4 mx-auto mx-md-0" style="max-width: 900px;">
+                                    Diseñamos e impulsamos estrategias financieras que generan valor, crecimiento y oportunidades para tu organización.
+                                </p>
+                            </div>
+                        </div>    
+                    </div> 
+                </section>
+                <section class="px-3 px-md-5 ">       
 
                     <div class="row g-4 pb-5">
-
                         <!-- Tarjeta 1: Fusiones y Adquisiciones -->
                         <div class="col-12 col-sm-6 col-md-3">
                             <div class="card h-100 border text-center bg-white shadow-sm p-3 interactive-card custom-card-border" style="min-height: 380px; cursor:pointer;" data-target="acquisitions">
@@ -105,44 +109,46 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto px-3 px-md-5" style="max-width: 1440px;">
-        <div class="mb-4 text-start">
-            <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-3 btn-back rounded-1" style="font-size: 0.95rem;">
-                <i class="fa-solid fa-arrow-left me-2"></i> Regresar a Soluciones
-            </button>
-        </div>
-        <div class="w-100">
-            <div class="text-muted text-center text-md-start lh-base mt-2" style="font-size: 0.95rem;">
-                <p class="mb-3">
-                    Acompañamos procesos de compra, venta, integración y expansión empresarial mediante estrategias diseñadas para maximizar el valor económico de cada operación.
-                </p>
-                <p class="mb-4">
-                    Nuestra experiencia incluye sectores como:
-                </p>
-            </div>
-            <div class="row g-4 align-items-center">
-                <div class="col-12 col-md-7">
-                    <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2" style="font-size: 0.95rem;">
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Farmacéutico</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Manufactura</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Tecnología</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Telecomunicaciones</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Transporte</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Comercio</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Servicios</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-5 text-center">
-                    <img src="<?php echo $baseUrl ?>img/bisonte-fusiones copia.jpg" alt="Bisonte Fusiones" class="img-fluid rounded shadow-sm mx-auto d-block" style="max-height: 220px; object-fit: cover;">
-                </div>
-            </div>
-            <div class="row mt-4 pt-2 pb-5">
-                <div class="col-12 text-muted text-center text-md-start" style="font-size: 0.95rem;">
-                    <p class="mb-0">
-                        Nos encargamos de identificar oportunidades, estructurar transacciones y gestionar negociaciones a nivel nacional e internacional.
+    <section class="mx-auto  my-5" style="max-width: 1440px;">
+        <div class="container-fluid px-3 px-md-5">
+            <div class="mb-2">
+                <div class="text-muted lh-base mt-2" style="font-size: 0.95rem;">
+                    <p class="mb-3">
+                        Acompañamos procesos de compra, venta, integración y expansión empresarial mediante estrategias diseñadas para maximizar el valor económico de cada operación.
+                    </p>
+                    <p class="mb-4">
+                        Nuestra experiencia incluye sectores como:
                     </p>
                 </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-7">
+                        <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2" style="font-size: 0.95rem;">
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Farmacéutico</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Manufactura</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Tecnología</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Telecomunicaciones</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Transporte</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Comercio</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Servicios</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-5 text-center">
+                        <img src="<?php echo $baseUrl ?>img/bisonte-fusiones copia.jpg" alt="Bisonte Fusiones" class="img-fluid rounded shadow-sm mx-auto d-block" style="max-height: 320px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="row mt-4 pt-2 pb-5">
+                    <div class="col-12 text-muted" style="font-size: 0.95rem;">
+                        <p class="mb-0">
+                            Nos encargamos de identificar oportunidades, estructurar transacciones y gestionar negociaciones a nivel nacional e internacional.
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="mb-4 text-start">
+                <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-2 btn-back rounded-1 fw-bold" style="font-size: 0.95rem; color: #8D3C45;">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Regresar a soluciones
+                </button>
+            </div>  
         </div>
     </section>
 </div>
@@ -157,36 +163,37 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto px-3 px-md-5" style="max-width: 1440px;">
-        <div class="mb-4 text-start">
-            <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-3 btn-back rounded-1" style="font-size: 0.95rem;">
-                <i class="fa-solid fa-arrow-left me-2"></i> Regresar a Soluciones
-            </button>
+    <section class="mx-auto  my-5" style="max-width: 1440px;">
+        <div class="container-fluid px-3 px-md-5">
+            <div class="mb-2">
+                <div class="text-muted lh-base mt-2" style="font-size: 0.95rem;">
+                    <p class="mb-4">
+                        Diseñamos estrategias de fondeo mediante capital, deuda o esquemas híbridos que permitan a nuestros clientes impulsar sus planes de crecimiento.
+                    </p>
+                </div>
+                <div class="row g-4 align-items-center pb-5">
+                    <div class="col-12 col-md-7">
+                        <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2" style="font-size: 0.95rem;">
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Diagnóstico financiero</li>
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Estructura financiera</li>
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Desarrollo de planes de negocio</li>
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Identificación de inversionistas y fondeadores</li>
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Negociación de términos y condiciones</li>
+                            <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Seguimiento posterior a la obtención del financiamiento</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-5 text-center">
+                        
+                        <img src="<?php echo $baseUrl ?>img/toro-capital.jpg" alt="Toro Capital" class="img-fluid rounded shadow-sm mx-auto d-block" style="max-height: 320px; object-fit: cover; width: 100%;">
+                    </div>
+                </div>
+            </div> 
+            <div class="mb-4 text-start">
+                <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-2 btn-back rounded-1 fw-bold" style="font-size: 0.95rem; color: #8D3C45;">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Regresar a soluciones
+                </button>
+            </div>     
         </div>
-        <!-- Se agrega mb-5 para dar más espacio vertical antes del footer -->
-        <div class="w-100 mb-5">
-            <div class="text-muted text-center text-md-start lh-base mt-2" style="font-size: 0.95rem;">
-                <p class="mb-4">
-                    Diseñamos estrategias de fondeo mediante capital, deuda o esquemas híbridos que permitan a nuestros clientes impulsar sus planes de crecimiento.
-                </p>
-            </div>
-            <div class="row g-4 align-items-center pb-5">
-                <div class="col-12 col-md-7">
-                    <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2" style="font-size: 0.95rem;">
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Diagnóstico financiero</li>
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Estructura financiera</li>
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Desarrollo de planes de negocio</li>
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Identificación de inversionistas y fondeadores</li>
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Negociación de términos y condiciones</li>
-                        <li class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> Seguimiento posterior a la obtención del financiamiento</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-5 text-center">
-                    <!-- Se cambia max-height a 320px para hacer la imagen más grande -->
-                    <img src="<?php echo $baseUrl ?>img/toro-capital.jpg" alt="Toro Capital" class="img-fluid rounded shadow-sm mx-auto d-block" style="max-height: 320px; object-fit: cover; width: 100%;">
-                </div>
-            </div>
-        </div>    
     </section>
 </div>
 
@@ -200,40 +207,42 @@
             </div>
         </div>
     </section>
-    <section class="mx-auto px-3 px-md-5" style="max-width: 1440px;">
-        <div class="mb-4 text-start">
-            <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-3 btn-back rounded-1" style="font-size: 0.95rem;">
-                <i class="fa-solid fa-arrow-left me-2"></i> Regresar a Soluciones
-            </button>
-        </div>
-        <div class="w-100">
-            <div class="text-muted text-center text-md-start lh-base mt-2" style="font-size: 0.95rem;">
-                <p class="mb-3">
-                    Servicio permanente de acompañamiento estratégico para propietarios y equipos directivos.
-                </p>
-                <p class="mb-4">
-                    A través de análisis financieros, modelos de negocio, planeación estratégica y seguimiento continuo, ayudamos a las empresas a fortalecer su desempeño y mejorar su capacidad de toma de decisiones.
-                </p>
-            </div>
-            
-            <div class="row g-4 pb-5">
-                <div class="col-12">
-                    <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2 mb-4" style="font-size: 0.95rem;">
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Planeación financiera</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Modelos financieros</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Indicadores de desempeño</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Control presupuestal</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Seguimiento de proyectos</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Gestión de pasivos financieros</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Consultoría financiera permanente</li>
-                    </ul>
+    <section class="mx-auto  my-5" style="max-width: 1440px;">
+        <div class="container-fluid px-3 px-md-5">
+            <div class="mb-2">
+                <div class="text-muted  lh-base mt-2" style="font-size: 0.95rem;">
+                    <p class="mb-3">
+                        Servicio permanente de acompañamiento estratégico para propietarios y equipos directivos.
+                    </p>
+                    <p class="mb-4">
+                        A través de análisis financieros, modelos de negocio, planeación estratégica y seguimiento continuo, ayudamos a las empresas a fortalecer su desempeño y mejorar su capacidad de toma de decisiones.
+                    </p>
                 </div>
-                <div class="col-12 text-center">
-                    <div class="w-100 overflow-hidden shadow-sm rounded">
-                        <img src="<?php echo $baseUrl ?>img/toro-impulso.jpg" alt="Impulso" class="img-fluid mx-auto d-block w-100" style="max-height: 380px; object-fit: cover;">
+                
+                <div class="row g-4 pb-5">
+                    <div class="col-12">
+                        <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2 mb-4" style="font-size: 0.95rem;">
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Planeación financiera</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Modelos financieros</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Indicadores de desempeño</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Control presupuestal</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Seguimiento de proyectos</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Gestión de pasivos financieros</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Consultoría financiera permanente</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="w-100 overflow-hidden shadow-sm rounded">
+                            <img src="<?php echo $baseUrl ?>img/toro-impulso.jpg" alt="Impulso" class="img-fluid mx-auto d-block w-100" style="max-height: 380px; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="mb-4 text-start">
+                <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-2 btn-back rounded-1 fw-bold" style="font-size: 0.95rem; color: #8D3C45;">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Regresar a soluciones
+                </button>
+            </div>      
         </div>    
     </section>
 </div> 
@@ -251,42 +260,43 @@
     </section>
     
     <!-- Cuerpo de la sección -->
-    <section class="mx-auto px-3 px-md-5" style="max-width: 1440px;">
-        <div class="mb-4 text-start">
-            <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-3 btn-back rounded-1" style="font-size: 0.95rem;">
-                <i class="fa-solid fa-arrow-left me-2"></i> Regresar a Soluciones
-            </button>
-        </div>
-        
-        <div class="w-100">
-            <div class="text-muted text-center text-md-start lh-base mt-2" style="font-size: 0.95rem;">
-                <p class="mb-3">
-                    Soluciones especializadas para la industria farmacéutica y ciencias de la vida.
-                </p>
-                <p class="mb-4">
-                    Contamos con experience en el desarrollo, crecimiento y fortalecimiento de empresas del sector salud y farmacéutico en México y Latinoamérica.
-                </p>
-            </div>
-            
-            <div class="row g-4 pb-5">    
-                <div class="col-12">
-                    <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2 mb-4" style="font-size: 0.95rem;">
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Estudios de mercado</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Estrategias de entrada a nuevos mercados</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Registro de marcas y patentes</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Gestión regulatoria</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Alianzas estratégicas</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Mejora continua</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Cumplimiento normativo</li>
-                        <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Preparación para auditorías internacionales</li>
-                    </ul>
+    <section class="mx-auto  my-5" style="max-width: 1440px;">
+        <div class="container-fluid px-3 px-md-5">            
+            <div class="mb-2">
+                <div class="text-muted lh-base mt-2" style="font-size: 0.95rem;">
+                    <p class="mb-3">
+                        Soluciones especializadas para la industria farmacéutica y ciencias de la vida.
+                    </p>
+                    <p class="mb-4">
+                        Contamos con experience en el desarrollo, crecimiento y fortalecimiento de empresas del sector salud y farmacéutico en México y Latinoamérica.
+                    </p>
                 </div>
-                <div class="col-12 text-center">
-                    <div class="w-100 overflow-hidden shadow-sm rounded">
-                        <img src="<?php echo $baseUrl ?>img/toro-pharma.jpg" alt="Pharma" class="img-fluid mx-auto d-block w-100" style="max-height: 380px; object-fit: cover;">
+                
+                <div class="row g-4 pb-5">    
+                    <div class="col-12">
+                        <ul class="list-unstyled text-muted d-flex flex-column gap-2 ps-2 mb-4" style="font-size: 0.95rem;">
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Estudios de mercado</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Estrategias de entrada a nuevos mercados</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Registro de marcas y patentes</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Gestión regulatoria</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Alianzas estratégicas</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Mejora continua</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Cumplimiento normativo</li>
+                            <li class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-check" style="color: #8D3C45;"></i> Preparación para auditorías internacionales</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="w-100 overflow-hidden shadow-sm rounded">
+                            <img src="<?php echo $baseUrl ?>img/toro-pharma.jpg" alt="Pharma" class="img-fluid mx-auto d-block w-100" style="max-height: 380px; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="mb-4 text-start">
+                <button class="btn btn-outline-secondary btn-sm px-3 py-2 mt-2 btn-back rounded-1 fw-bold" style="font-size: 0.95rem; color: #8D3C45;">
+                    <i class="fa-solid fa-arrow-left me-2"></i> Regresar a soluciones
+                </button>
+            </div>    
         </div>    
     </section>
 </div>

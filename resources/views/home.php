@@ -1,19 +1,19 @@
 <div class="w-100 bg-white">
 
     <!-- 1. SECCIÓN IMAGEN PRINCIPAL -->
-    <section class="hero-image-section w-100 position-relative" style="max-height: 500px; overflow: hidden;">
+    <section class="hero-image-section w-100 position-relative banner-fortaleza" style="max-height: 500px; overflow: hidden;">
 
         <img src="<?php echo $baseUrl ?>img/banner-Principal inicio-toro fortaleza-1.jpg" alt="Fortaleza" class="w-100 d-block object-fit-cover" style="height: 500px; object-position: center;">
     </section>
 
     <!-- 2. SECCIÓN SOMOS -->
-    <section id="somos" class="text-center bg-white">
+    <section id="somos" class="mx-auto bg-white" style="max-width: 1440px; width: 100%;" >
         <div class="container-fluid px-5 py-5">
+            <div class= "text-center mb-5" >
+                <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">SOMOS</h2>
 
-            <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">SOMOS</h2>
-
-            <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">TU SOLIDEZ ES NUESTRO NEGOCIO</h6>
-
+                <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 1.2rem; letter-spacing: 0.5px;">TU SOLIDEZ ES NUESTRO NEGOCIO</h6>
+            </div>
 
             <div class="text-muted text-start lh-base" style="font-size: 0.95rem;">
                 <p class="mb-3">
@@ -31,15 +31,15 @@
 
     
     <!-- 3. SECCIÓN ¿QUÉ HACEMOS?  -->
-<section id="que-hacemos" class="" style="background-color: #f4f6f8; font-family: sans-serif;">
+<section id="que-hacemos" class="mx-auto" style="max-width: 1440px; width: 100%; background-color: #f4f6f8; font-family: sans-serif;">
     <div class="container-fluid px-5 py-5">
 
         <div class="text-center mb-5">
-            <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">¿QUÉ HACEMOS?</h2>
-            <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">CONVERTIMOS LOS DESAFÍOS EMPRESARIALES EN OPORTUNIDADES DE CRECIMIENTO</h6>
+            <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">¿QUÉ HACEMOS?</h2>
+            <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">CONVERTIMOS LOS DESAFÍOS EMPRESARIALES EN OPORTUNIDADES DE CRECIMIENTO</h6>
         </div>
 
-        <div class="row g-5 align-items-center">
+        <div class="row  align-items-center">
 
            
             <div class="col-12 col-md-7 text-muted" style="font-size: 0.92rem; line-height: 1.6;">
@@ -94,16 +94,16 @@
 
 
     <!-- 4. SECCIÓN TRAYECTORIA -->
-    <section id="trayectoria" class=" bg-white">
+    <section id="trayectoria" class="bg-white mx-auto" style="max-width: 1440px; width: 100%;">
         <div class="container-fluid px-5 py-5">
             <div class="text-center ">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">TRAYECTORIA</h2>
-                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">MÁS DE 18 AÑOS FORTALECIENDO EMPRESAS</h6>
+                <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">TRAYECTORIA</h2>
+                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">MÁS DE 18 AÑOS FORTALECIENDO EMPRESAS</h6>
             </div>
 
-            <div class="row g-4 align-items-center">
+            <div class="row align-items-center">
 
-                <div class="col-md-5 text-center text-md-start opacity-75">
+                <div class="col-md-5 text-center text-md-center opacity-75">
                     <img src="<?php echo $baseUrl ?>img/toro-diestro-gris.png" alt="Diestro Trazo" class="img-fluid" style="max-height: 420px;">
                 </div>
                 <div class="col-12 col-md-7 text-muted" style="font-family: 'MuseoSans-300', sans-serif; font-size: 0.95rem; line-height: 1.7;">
@@ -123,16 +123,16 @@
     </section>
 
     <!-- 5. SECCIÓN FORTALECIMIENTO DE NEGOCIOS -->
-    <section id="fortalecimiento" class="" style="background-color: #f4f6f8;">
+    <section id="fortalecimiento" class="mx-auto" style="max-width: 1440px; width: 100%; background-color: #f4f6f8;">
         <div class="container-fluid px-5 py-5">
             <div class="text-center mb-4">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">FORTALECIMIENTO DE NEGOCIOS</h2>
-                <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">FORTALECEMOS NEGOCIOS, IMPULSAMOS CRECIMIENTO</h6>
+                <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">FORTALECIMIENTO DE NEGOCIOS</h2>
+                <h6 class="text-uppercase fw-bold mb-4" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">FORTALECEMOS NEGOCIOS, IMPULSAMOS CRECIMIENTO</h6>
             </div>
 
             <div class="d-flex flex-column gap-4 ps-md-4 text-muted" style="font-size: 0.92rem;">
                 <h4 class="text-uppercase fw-bold mt-2" style="color: #8D3C45; font-size: 1.3rem;">EXPERECIENCIA, ESTRATÉGIA Y EJECUCIÓN</h4>
-                <p class="mb-5" style="font-size: 0.92rem;">Nuestra metodología se basa en cuatro pilares fundamentales:</p>    
+                <p class="mb-3" style="font-size: 1rem;">Nuestra metodología se basa en cuatro pilares fundamentales:</p>    
             </div>
 
             <div class="d-flex flex-column gap-4 ps-md-4 text-muted" style="font-size: 0.92rem;">
@@ -163,12 +163,12 @@
         </div>
     </section>
 
-    <section id="casos-exito" class="bg-white">
+    <section id="casos-exito" class="bg-white mx-auto" style="max-width: 1440px; width: 100%;">
         <div class="container-fluid px-5 py-5 text-center">
 
             <div class="mb-5">
-                <h2 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">CASOS DE ÉXITO</h2>
-                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">EMPRESAS QUE HAN CONFIADO EN DIESTRO</h6>
+                <h2 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">CASOS DE ÉXITO</h2>
+                <h6 class="text-uppercase fw-bold" style="color: #1E355E; font-size:  1.2rem; letter-spacing: 0.5px;">EMPRESAS QUE HAN CONFIADO EN DIESTRO</h6>
             </div>
             
             <div id="contenedor-logos" class="row align-items-center justify-content-center g-5 mb-4" style="min-height: 100px;">

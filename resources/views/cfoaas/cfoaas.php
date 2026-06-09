@@ -6,19 +6,19 @@
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">CFO AS A SERVICE (CFOAAS)</h1>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">CFO AS A SERVICE (CFOAAS)</h1>
                 <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">DIRECCIÓN FINANCIERA ESTRATÉGICA SIN LA RIGIDEZ DE UNA ESTRUCTURA INTERNA</h5>
             </div>
         </div>
     </section>
 
-    <div class="mx-auto" style="max-width: 1440px;">
+    <div class="mx-auto mb-5" style="max-width: 1440px;">
 
         <!-- 2. SECCIÓN IMPULSO CFOAAS -->
         <section class="py-4 bg-white">
             <div class="container-fluid px-3 px-md-5">
                 <div class="mb-2">
-                    <h3 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 1.25rem; letter-spacing: 0.5px;">IMPULSO CFOAAS</h3>
+                    <h3 class="text-uppercase mb-2" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 0.5px;">IMPULSO CFOAAS</h3>
                     <p class="text-muted mb-0 lh-base" style="font-size: 0.95rem;">
                         CFOaaS de Diestro (Impulso) permite a las empresas acceder a la experiencia y visión de un Director Financiero senior, de forma flexible y a la medida de sus necesidades, sin incurrir en los costos y complejidad de una contratación permanente.
                     </p>
@@ -89,7 +89,7 @@
 
                     
                     <div class="col-12 col-md-7 text-muted">
-                        <h3 class="text-uppercase mb-3" style="color: #8D3C45; font-size: 1.25rem; letter-spacing: 0.5px;">BENEFICIOS CLAVE</h3>
+                        <h3 class="text-uppercase mb-3" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 0.5px;">BENEFICIOS CLAVE</h3>
                         <ul class="list-unstyled d-flex flex-column gap-2 m-0" style="font-size: 0.95rem; line-height: 1.6;">
                             <li class="d-flex align-items-start gap-2">
                                 <i class="fa-solid fa-circle-check mt-1" style="color: #8D3C45;"></i> <span>Mayor control financiero y visibilidad del negocio</span>
@@ -120,7 +120,7 @@
                     
                     <!-- Cabecera de la tarjeta: Fondo azul claro tenue -->
                     <div class="px-4 py-3 border-bottom">
-                        <h3 class="m-0 text-uppercase" style="color: #8D3C45; font-size: 1.3rem; letter-spacing: 0.5px;">
+                        <h3 class="m-0 text-uppercase" style="color: #8D3C45; font-size: 1.5rem; letter-spacing: 0.5px;">
                             ¿PARA QUIÉN ES?
                         </h3>
                     </div>

@@ -1,32 +1,48 @@
-<div class="w-100 bg-white">
-        <!-- 1. BANNER DE BIENVENIDA  -->
+<div class="bg-white">
+    <!-- 1. BANNER DE BIENVENIDA  -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
-            
+
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px; font-family: 'Novecentowide-Bold', sans-serif;">CERTIFICACIONES</h1>
-                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px; font-family: 'Novecentowide-Normal', sans-serif;">QUE FORTALECEN LA CONFIANZA</h5>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;" >CERTIFICACIONES</h1>
+                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;" >QUE FORTALECEN LA CONFIANZA</h5>
             </div>
         </div>
     </section>
-    
+
     <div class="mx-auto" style="max-width: 1440px;">
 
         <!-- 2. TEXTO INTRODUCTORIO Y CUADRÍCULA DE TARJETAS ISO -->
-        <section>
-            
-            <div class="text-muted text-center text-md-start lh-base px-3 px-md-5 pt-5 pb-3" style="font-size: 0.95rem;">
-                <p class="mb-3 mx-auto mx-md-0" style="max-width: 900px;">
-                    Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
-                </p>
-                <p class="mb-0 mx-auto mx-md-0" style="max-width: 900px;">
-                    La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
-                </p>
-            </div>
+        
+            <!-- <div class="container-fluid px-3 px-md-5 pt-5 pb-3">
+                <div class="text-muted text-center text-md-start lh-base" style="font-size: 0.95rem;">
+                    <p class="mb-3 mx-auto mx-md-0" style="max-width: 900px;">
+                        Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
+                    </p>
+                    <p class="mb-0 mx-auto mx-md-0" style="max-width: 900px;">
+                        La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
+                    </p>
+                </div>
+            </div>     -->
 
-           
+            <section>
+                <div class="container-fluid px-3 px-md-5 px-md-5 pt-5 pb-3">
+                    <div class="mx-auto" style="max-width: 1440px; width: 100%;">
+                        <div class="text-muted lh-base" style="font-size: 0.95rem;">
+                            <p class="mb-3 mx-auto mx-md-0" style="max-width: 900px;">
+                                Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
+                            </p>
+                            <p class="mb-0 mx-auto mx-md-0" style="max-width: 900px;">
+                                La certificación adecuada permite mejorar procesos, reducir riesgos, incrementar la confianza de clientes y abrir nuevas oportunidades de negocio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <section>
             <div class="container-fluid px-3 px-md-5 pb-5 pt-3" style="background-color: #f4f6f8;">
-               
+
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
 
                     <!-- ISO 9001 -->
@@ -92,11 +108,11 @@
         <!-- 3. BUSCADOR / COMPROBADOR DE CERTIFICACIÓN -->
         <section class="py-5 bg-white border-bottom">
             <div class="container px-3">
-                
+
                 <form action="#" method="GET" class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mx-auto" style="max-width: 650px;">
-                    
+
                     <div class="w-100 flex-grow-1">
-                        
+
                         <input type="text" name="certificacion" class="form-control py-2 px-3 border border-secondary-subtle rounded-1 text-muted" placeholder="Compruebe aquí su certificación" style="font-size: 0.85rem;">
                     </div>
 
@@ -105,5 +121,5 @@
             </div>
         </section>
 
-    </div> 
+    </div>
 </div>
