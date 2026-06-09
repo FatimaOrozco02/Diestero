@@ -1,5 +1,5 @@
-<!-- sección superior: cfoaas y beneficios (fondo blanco) -->
-<section class="py-5 bg-white font-sans-serif" style="color: #333333;">
+
+<section class="py-5 font-sans-serif" style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover;">
     <div class="container-fluid px-5 py-3">
         <div class="pb-3 mb-4">
             <h1 class="fw-bold m-0" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 0.5px;">CFO AS A SERVICE (CFOAAS)</h1>
@@ -8,7 +8,7 @@
             </p>
         </div>
     </div>
-
+</section>
     <div class="container-fluid px-5 py-3">
         <div class="mb-5">
             <h3 class="text-uppercase fw-bold mb-3" style="color: #8D3C45; font-size: 1.3rem;">IMPULSO CFOAAS</h3>
@@ -19,7 +19,7 @@
             </p>
 
         </div>
-</section>
+
 <section class="py-5" style="background-color: #f4f6f8;">
     <div class="container-fluid px-5 py-5">
         <div class="mt-5 pt-4">
@@ -72,36 +72,59 @@
     </div>
 </section>
 
-<section style="background-color: #f4f6f8;">
-    <div class="row align-items-center g-5 mb-5">
-        <!-- columna izquierda: imagen  -->
-        <div class="col-12 col-md-5">
-            <div class="shadow-sm rounded overflow-hidden" style="max-height: 380px;">
-                <img src="<?php echo $baseUrl ?>img/close-up-workplace copia_1200px.jpg" alt="Beneficios CFOaaS" class="img-fluid w-100 h-100 object-fit-cover">
+<!-- SECCIÓN CON EL FONDO GRIS CLARO -->
+<section style="background-color: #f4f6f8;" class="py-5 font-sans-serif">
+    
+    <!-- CORRECCIÓN: Se añade el contenedor fluido con tus márgenes px-5 -->
+    <div class="container-fluid px-5 py-3">
+        
+        <div class="row align-items-center g-5">
+            
+            <!-- columna izquierda: imagen perfectamente encuadrada -->
+            <div class="col-12 col-md-5">
+                <!-- Se añade aspect-ratio para fijar la proporción idéntica a tu diseño -->
+                <div class="shadow-sm rounded overflow-hidden" style="max-height: 340px; aspect-ratio: 4 / 3;">
+                    <img src="<?php echo $baseUrl ?>img/close-up-workplace copia_1200px.jpg" alt="Beneficios CFOaaS" class="img-fluid w-100 h-100 object-fit-cover">
+                </div>
             </div>
+
+            <!-- columna derecha: lista alineada -->
+            <div class="col-12 col-md-7 text-muted">
+                <h3 class="text-uppercase fw-bold mb-4" style="color: #8D3C45; font-size: 1.4rem; letter-spacing: 0.5px;">
+                    BENEFICIOS CLAVE
+                </h3>
+
+                <ul class="list-unstyled m-0" style="font-size: 0.98rem; line-height: 1.8;">
+                    <!-- Se limpia el carácter ">" extra que tenías dentro de la etiqueta del primer icono -->
+                    <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-circle-check text-danger fs-6 me-3 mt-1"></i> 
+                        <span>Mayor control financiero y visibilidad del negocio</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-circle-check text-danger fs-6 me-3 mt-1"></i> 
+                        <span>Decisiones mejor informadas y oportunas</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-3">
+                        <i class="fa-solid fa-circle-check text-danger fs-6 me-3 mt-1"></i> 
+                        <span>Optimización de liquidez y EBITDA</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-3">
+                        <i class="bi bi-check-circle-fill me-3 mt-1" style="color: #8D3C45;"></i>
+                        <i class="fa-solid fa-circle-check text-danger fs-6 me-3 mt-1"></i> 
+                        <span>Reducción de riesgos operativos y financieros</span>
+                    </li>
+                    <li class="d-flex align-items-start mb-0">
+                        <i class="fa-solid fa-circle-check text-danger fs-6 me-3 mt-1"></i> 
+                        <span>Acceso a fuentes de financiamiento y relación con inversionistas</span>
+                    </li>
+                </ul>
+            </div>
+            
         </div>
-
-        <!-- columna derecha: lista -->
-        <div class="col-12 col-md-7">
-            <h3 class="text-uppercase fw-bold mb-4" style="color: #8D3C45; font-size: 1.4rem;">BENEFICIOS clave</h3>
-
-            <ul class="list-unstyled text-muted" style="font-size: 0.95rem;">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-circle-check text-danger fs-6">></i> Mayor control ﬁnanciero y visibilidad del
-                    negocio
-                </li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-circle-check text-danger fs-6"></i> Decisiones mejor informadas y oportunas
-                </li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-circle-check text-danger fs-6"></i> Optimización de liquidez y EBITDA
-                </li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-circle-check text-danger fs-6"></i> Reducción de riesgos operativos y ﬁnancieros
-                </li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-circle-check text-danger fs-6"></i> Acceso a fuentes de ﬁnanciamiento y relación
-                    con inversionistas</li>
-
-            </ul>
-        </div>
+        
     </div>
 </section>
+
 
 
 <section class="py-5 bg-white font-sans-serif" style="color: #333333;">

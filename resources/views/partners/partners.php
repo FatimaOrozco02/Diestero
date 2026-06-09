@@ -1,7 +1,7 @@
 <div class="w-100 bg-white">
 
 
-    <section class="py-5" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('<?php echo $baseUrl ?>img/.jpg') no-repeat center center; background-size: cover;">
+    <section class="py-5 font-sans-serif" style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover;">
         <div class="container-fluid px-5 py-5">
 
             <h1 class="text-uppercase fw-bold mb-1" style="color: #8D3C45; font-size: 2.5rem; letter-spacing: 1px;">Socios</h1>
@@ -10,9 +10,15 @@
         </div>
     </section>
 
-    <section class="hero-image-section w-100">
-        <img src="<?php echo $baseUrl ?>img/toros-nuestro equipo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: 500px;">
+    <section class="hero-image-section w-100 pt-4">
+        <!-- Se cambia el enfoque visual al borde superior (top center) y se ajusta la altura para rescatar las letras -->
+        <img src="<?php echo $baseUrl ?>img/toros-nuestro equipo.jpg"
+            alt="Nuestro equipo"
+            class="w-100 d-block object-fit-cover"
+            style="max-height: 550px; min-height: 250px; object-position: top center;">
     </section>
+
+
 
     <section class="bg-white">
         <div class="container-fluid px-5 py-5">
