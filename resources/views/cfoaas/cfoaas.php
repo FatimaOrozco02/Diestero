@@ -2,12 +2,12 @@
 
 <div class="w-100 bg-white">
 
-    <!-- 1. BANNER DE BIENVENIDA COMPACTO -->
+    <!-- 1. BANNER DE BIENVENIDA  -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1" style="color: #8D3C45; font-size: 1.8rem; letter-spacing: 1px;">CFO AS A SERVICE (CFOAAS)</h1>
-                <h5 class="text-uppercase mb-0" style="color: #1E355E; font-size: 0.85rem; letter-spacing: 0.5px;">DIRECCIÓN FINANCIERA ESTRATÉGICA SIN LA RIGIDEZ DE UNA ESTRUCTURA INTERNA</h5>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">CFO AS A SERVICE (CFOAAS)</h1>
+                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">DIRECCIÓN FINANCIERA ESTRATÉGICA SIN LA RIGIDEZ DE UNA ESTRUCTURA INTERNA</h5>
             </div>
         </div>
     </section>

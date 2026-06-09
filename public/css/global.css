@@ -56,6 +56,8 @@ h4, h5, h6, .subtitulo {
     font-weight: normal;
 }
 
+
+
 /* --- ESTILOS DE COLOR PARA EL MENÚ DE NAVEGACIÓN --- */
 
 /* Color azul marino por defecto para todo el menú */
@@ -101,12 +103,6 @@ h4, h5, h6, .subtitulo {
       height: auto;
    }
 }
-
-
-
-
-
-
 
 
 @keyframes animloader {

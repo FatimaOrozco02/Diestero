@@ -1,20 +1,20 @@
 <div class="w-100 bg-white">
-        <!-- 1. BANNER DE BIENVENIDA (Más angosto y compacto, idéntico al PDF) -->
+        <!-- 1. BANNER DE BIENVENIDA  -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
-            <!-- Contenedor central limitado para que el título no se desplace al extremo en monitores 4K -->
+            
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1" style="color: #8D3C45; font-size: 1.8rem; letter-spacing: 1px; font-family: 'Novecentowide-Bold', sans-serif;">CERTIFICACIONES</h1>
-                <h5 class="text-uppercase mb-0" style="color: #1E355E; font-size: 0.85rem; letter-spacing: 0.5px; font-family: 'Novecentowide-Normal', sans-serif;">QUE FORTALECEN LA CONFIANZA</h5>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px; font-family: 'Novecentowide-Bold', sans-serif;">CERTIFICACIONES</h1>
+                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px; font-family: 'Novecentowide-Normal', sans-serif;">QUE FORTALECEN LA CONFIANZA</h5>
             </div>
         </div>
     </section>
-    <!-- CONTAINER CENTRAL LIMITADOR PARA PANTALLAS ULTRA ANCHAS -->
+    
     <div class="mx-auto" style="max-width: 1440px;">
 
         <!-- 2. TEXTO INTRODUCTORIO Y CUADRÍCULA DE TARJETAS ISO -->
         <section>
-            <!-- Párrafos descriptivos -->
+            
             <div class="text-muted text-center text-md-start lh-base px-3 px-md-5 pt-5 pb-3" style="font-size: 0.95rem;">
                 <p class="mb-3 mx-auto mx-md-0" style="max-width: 900px;">
                     Ayudamos a empresas de todos los tamaños a implementar, auditar y certificar sistemas de gestión alineados con estándares internacionales.
@@ -24,9 +24,9 @@
                 </p>
             </div>
 
-            <!-- Grilla unificada y responsiva de Certificaciones -->
+           
             <div class="container-fluid px-3 px-md-5 pb-5 pt-3" style="background-color: #f4f6f8;">
-                <!-- Cambiado a row-cols-1 (móvil), row-cols-sm-2 (tablet) y row-cols-lg-4 (escritorio) para perfecta fluidez -->
+               
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
 
                     <!-- ISO 9001 -->
@@ -92,11 +92,11 @@
         <!-- 3. BUSCADOR / COMPROBADOR DE CERTIFICACIÓN -->
         <section class="py-5 bg-white border-bottom">
             <div class="container px-3">
-                <!-- Ajustado con clases nativas de Bootstrap para envolverse limpiamente en móviles -->
+                
                 <form action="#" method="GET" class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mx-auto" style="max-width: 650px;">
                     
                     <div class="w-100 flex-grow-1">
-                        <!-- Corregido error de dedo ortográfico "tu" por "su" -->
+                        
                         <input type="text" name="certificacion" class="form-control py-2 px-3 border border-secondary-subtle rounded-1 text-muted" placeholder="Compruebe aquí su certificación" style="font-size: 0.85rem;">
                     </div>
 
@@ -105,5 +105,5 @@
             </div>
         </section>
 
-    </div> <!-- FIN DEL CONTENEDOR LIMITADOR -->
+    </div> 
 </div>

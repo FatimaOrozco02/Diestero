@@ -1,21 +1,22 @@
-$(document).ready(function() {
+$(document).ready(function () {
     
-    $('#acquisitions, #financing, #business, #pharma').hide();
+    $('.interactive-card').on('click', function () {
+        const targetId = $(this).attr('data-target');
+        const $targetView = $('#' + targetId);
 
-    
-    $('.interactive-card').click(function() {
-        
-        let vistaObjetivoId = $(this).data('target');
-        
-        
-        if (vistaObjetivoId === 'acquisitions') {
-            vistaObjetivoId = 'acquisitions';
+        if ($targetView.length) {
+            $('#principal').addClass('d-none'); 
+            $targetView.removeClass('d-none');  
         }
+    });
+    
+    $('.btn-back').on('click', function () {
+        
+        $('.view-section').addClass('d-none');
         
         
-        $('#principal').hide();
+        $('#principal').removeClass('d-none');
         
-        
-        $('#' + vistaObjetivoId).fadeIn();
+        $(window).scrollTop(0);
     });
 });

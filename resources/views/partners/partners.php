@@ -1,11 +1,11 @@
 <div class="w-100 bg-white">
 
-    <!-- 1. BANNER DE BIENVENIDA COMPACTO (140px, idéntico al PDF) -->
+    <!-- 1. BANNER DE BIENVENIDA -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1" style="color: #8D3C45; font-size: 1.8rem; letter-spacing: 1px;">SOCIOS</h1>
-                <h5 class="text-uppercase mb-0" style="color: #1E355E; font-size: 0.85rem; letter-spacing: 0.5px;">SOLUCIONES DISEÑADAS PARA IMPULSAR TU ORGANIZACIÓN</h5>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2rem; letter-spacing: 1px;">SOCIOS</h1>
+                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">SOLUCIONES DISEÑADAS PARA IMPULSAR TU ORGANIZACIÓN</h5>
             </div>
         </div>
     </section>
@@ -15,7 +15,7 @@
         <img src="<?php echo $baseUrl ?>img/toros-nuestro equipo.jpg" alt="Nuestro equipo" class="w-100 d-block object-fit-cover" style="max-height: 400px; min-height: 200px; object-position: top center;">
     </section>
 
-    <!-- CONTAINER CENTRAL LIMITADOR PARA PANTALLAS ULTRA ANCHAS (2K / 4K) -->
+    
     <div class="mx-auto" style="max-width: 1440px;">
 
         <!-- 3. LISTADO DE SOCIOS -->
@@ -29,7 +29,7 @@
                             <img src="<?php echo $baseUrl ?>img/Oscar.jpg" alt="Oscar R. Díaz Flores" class="w-100 h-100 d-block object-fit-cover">
                         </div>
                     </div>
-                    <!-- Se incrementó el tamaño de fuente a 0.98rem para mejor lectura -->
+                    
                     <div class="col-12 col-md-9 text-muted text-center text-md-start lh-base" style="font-size: 0.98rem; text-align: justify;">
                         <h6 class="text-uppercase mb-3" style="color: #1E355E; font-size: 1.1rem; letter-spacing: 0.5px; font-family: 'Novecentowide-Bold', sans-serif;">Oscar R. Díaz Flores</h6>
                         <p class="mb-0">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
 
-                <!-- SOCIO 5: Jorge (Completado y cerrado de forma limpia) -->
+                <!-- SOCIO 5: Jorge -->
                 <div class="row align-items-start py-4">
                     <div class="col-12 col-md-3 mb-3 mb-md-0 text-center text-md-start">
                         <div class="overflow-hidden shadow-sm mx-auto mx-md-0" style="max-width: 240px; aspect-ratio: 1 / 1;">
@@ -101,5 +101,4 @@
             </div>
         </section>
 
-    </div> <!-- FIN DEL CONTENEDOR LIMITADOR -->
-</div>
+    </div> 

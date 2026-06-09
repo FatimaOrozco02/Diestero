@@ -1,22 +1,20 @@
 <div class="w-100 bg-white">
 
-    <!-- 1. BANNER DE BIENVENIDA COMPACTO (140px, idéntico al PDF) -->
+    <!-- 1. BANNER DE BIENVENIDA COMPACTO -->
     <section style="background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.55)), url('<?php echo $baseUrl ?>img/banner 2.jpg') no-repeat center center; background-size: cover; min-height: 140px;" class="d-flex align-items-center border-bottom border-light">
         <div class="container-fluid px-3 px-md-5 py-4 text-center text-md-start">
             <div class="mx-auto" style="max-width: 1440px; width: 100%;">
-                <h1 class="text-uppercase mb-1" style="color: #8D3C45; font-size: 1.8rem; letter-spacing: 1px;">CONTACTO</h1>
-                <h5 class="text-uppercase mb-0" style="color: #1E355E; font-size: 0.85rem; letter-spacing: 0.5px;">CONVERSEMOS SOBRE EL FUTURO DE TU ORGANIZACIÓN</h5>
+                <h1 class="text-uppercase mb-1 fw-bold" style="color: #8D3C45; font-size: 2.2.rem; letter-spacing: 1px;">CONTACTO</h1>
+                <h5 class="text-uppercase mb-0 fw-bold" style="color: #1E355E; font-size: 0.95rem; letter-spacing: 0.5px;">CONVERSEMOS SOBRE EL FUTURO DE TU ORGANIZACIÓN</h5>
             </div>
         </div>
     </section>
 
-    <!-- CONTAINER CENTRAL LIMITADOR PARA PANTALLAS ULTRA ANCHAS (2K / 4K) -->
     <div class="mx-auto" style="max-width: 1440px;">
 
         <section class="py-4 bg-white" style="color: #333333;">
             <div class="container-fluid px-3 px-md-5">
 
-                <!-- Texto descriptivo introductorio (Letra más grande) -->
                 <div class="row mb-4">
                     <div class="col-12 text-muted" style="font-size: 1.05rem; max-width: 900px; line-height: 1.6;">
                         <p class="mb-0">
@@ -25,7 +23,7 @@
                     </div>
                 </div>
 
-                <!-- Bloque de Contacto: g-4 añade la pequeña separación entre imagen y formulario -->
+                
                 <div class="row g-4 align-items-stretch" style="min-height: 500px;">
 
                     <!-- Columna Izquierda: Imagen Adaptativa -->
@@ -76,10 +74,10 @@
                         </div>
                     </div>
 
-                </div> <!-- Fin de la fila del bloque -->
+                </div> 
 
             </div>
         </section>
 
-    </div> <!-- FIN DEL CONTENEDOR LIMITADOR -->
+    </div> 
 </div>
