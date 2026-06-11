@@ -16,10 +16,10 @@ $(document).ready(() => {
         .done(function (response) {
           console.log(response);
           mainAlert("success", "Código encontrado");
-          createAndDownloadFile(`${baseUrl}media/certificaciones/${response.data.id}`);
+          createAndDownloadFile(`${baseUrl}media/certificaciones/${response.data.id}`, `certificado-${response.data.code}.pdf`);
         })
         .fail(function () {
-          mainAlert("error", "Surgio un error en la conexión");
+          mainAlert("error", "El certificado no se ha encontrado, por favor verifique el código ingresado");
         })
         .always(function () {
           certificationFormSubmitBtn.attr("disabled", false);
