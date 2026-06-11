@@ -67,6 +67,29 @@ final class CertificationController extends Controller
             $this->response->successJson('Datos de la certificación', $certification);
       }
 
+      /** JSON - Obtiene los datos de una certificación por código */
+      public function getByCode(): void
+      {
+            $validator = Validator::make($this->request->body(), [
+                  'code' => 'required|string|min:3|max:250',
+            ]);
+
+            if ($validator->fails()) {
+                  $this->response->errorJson('No se cumplen los requisitos', $validator->errors(), 422);
+                  return;
+            }
+
+            $data = $validator->validated();
+
+            $certification = (new Certification())->findActiveByCode($data['code']);
+            if (!$certification) {
+                  $this->response->errorJson('Certificación no encontrada', null, 404);
+                  return;
+            }
+
+            $this->response->successJson('Datos de la certificación', $certification);
+      }
+
       /** JSON - Crea una nueva certificación */
       public function store(): void
       {

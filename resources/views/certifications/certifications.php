@@ -109,14 +109,14 @@
         <section class="py-5 bg-white border-bottom">
             <div class="container px-3">
 
-                <form action="#" method="GET" class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mx-auto" style="max-width: 650px;">
+                <form id="certificationForm" class="d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3 mx-auto" style="max-width: 650px;">
 
                     <div class="w-100 flex-grow-1">
 
-                        <input type="text" name="certificacion" class="form-control py-2 px-3 border border-secondary-subtle rounded-1 text-muted" placeholder="Compruebe aquí su certificación" style="font-size: 0.85rem;">
+                        <input type="text" name="code" class="form-control py-2 px-3 border border-secondary-subtle rounded-1 text-muted" placeholder="Compruebe aquí su certificación" style="font-size: 0.85rem;" required>
                     </div>
 
-                    <button type="submit" class="btn px-4 py-2 text-white w-100 w-sm-auto rounded-1" style="background-color: #8D3C45; font-size: 0.9rem; min-width: 140px;">Comprobar</button>
+                    <button type="submit" id="certificationFormSubmitBtn" class="btn px-4 py-2 text-white w-100 w-sm-auto rounded-1" style="background-color: #8D3C45; font-size: 0.9rem; min-width: 140px;">Comprobar</button>
                 </form>
             </div>
         </section>

@@ -24,6 +24,8 @@ $router->get('cfoaas', 'HomeController@cfoaas');
 $router->get('socios', 'HomeController@partners');
 $router->get('contacto', 'HomeController@contact');
 
+$router->post('certificaciones/verificar', 'CertificationController@getByCode');
+
 
 // Admin
 $router->group(['prefix' => 'admin'], function (Router $router) {
