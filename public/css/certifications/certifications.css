@@ -2,3 +2,7 @@
     border:  4px solid #1E355E;
     
 }
+
+label.error{
+      position: absolute;
+}

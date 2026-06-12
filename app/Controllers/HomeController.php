@@ -25,6 +25,7 @@ final class HomeController  extends Controller
       {
             $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
             $this->view()->addScript('admin/scripts.js');
+            $this->view()->addStyle('admin/styles.css');
             $this->render('certifications/certifications');
       }
 
