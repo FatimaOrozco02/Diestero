@@ -49,5 +49,5 @@ final class MediaController extends Controller
             header('Cache-Control: public, max-age=86400');
 
             readfile($fullPath);
-      }
+      }      
 }
