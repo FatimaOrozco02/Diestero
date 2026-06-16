@@ -12,7 +12,7 @@ use Core\Controller;
 final class MailerController extends Controller {
 
     public function enviar() {
-        // Obliga al servidor a responder en formato JSON limpio
+        
         header('Content-Type: application/json');
 
         // 1. Recibir y limpiar datos básicos
@@ -42,8 +42,8 @@ final class MailerController extends Controller {
             
             $mail->Host       = 'smtp.office365.com';                       
             $mail->SMTPAuth   = true;                                   
-            $mail->Username   = 'forozco@difusion.com.mx';
-            $mail->Password   = 'Fa19or26@';    
+            $mail->Username   = 'diestrocorporativo@diestro.com';
+            $mail->Password   = 'D$180886342843ap';    
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
             $mail->Port       = 587;  
             
@@ -57,8 +57,8 @@ final class MailerController extends Controller {
 
 
             
-            $mail->setFrom($emailP, $nameP);
-            $mail->addAddress('forozco@difusion.com.mx', 'Diestro');  
+            $mail->setFrom('diestrocorporativo@diestro.com', $nameP);
+            $mail->addAddress('diestrocorporativo@diestro.com', 'Diestro');  
 
             
             $mail->isHTML(true);                                        
