@@ -122,7 +122,6 @@ final class CertificationService extends Service
                   }
 
                   $storagePath = __DIR__ . '/../../storage/';
-
                   $templatePdf = $storagePath . 'templates/certifies/' . $certify['template'];
                   $certificationPdf = $storagePath . 'uploads/certifications/' . $certificationCode . '.pdf';
 
@@ -155,7 +154,7 @@ final class CertificationService extends Service
                   $pageHeight = $size['height'];
 
                   $primaryColor = [23, 57, 97];
-                  $accentColor = [151, 61, 75];
+                  $accentColor = [140, 61, 70];
                   $textColor = [90, 90, 90];
 
                   $writeCentered = function (
@@ -166,7 +165,7 @@ final class CertificationService extends Service
                         float $w,
                         float $h,
                         string $font,
-                        int $size,
+                        float $size,
                         array $color,
                         string $style = ''
                   ) {
@@ -184,7 +183,7 @@ final class CertificationService extends Service
                         float $w,
                         float $h,
                         string $font,
-                        int $size,
+                        float $size,
                         array $color,
                         string $style = ''
                   ) {
@@ -198,12 +197,12 @@ final class CertificationService extends Service
                   $writeCentered(
                         $pdf,
                         $certificationData['institution'],
-                        27,
-                        103,
-                        162,
-                        14,
+                        23,
+                        101,
+                        170,
+                        18,
                         $montserratBold,
-                        21,
+                        27,
                         $accentColor
                   );
 
