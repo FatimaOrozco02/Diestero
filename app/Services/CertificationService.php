@@ -10,6 +10,7 @@ use App\Utils;
 use Core\Database;
 use Core\Service;
 use setasign\Fpdi\Tcpdf\Fpdi;
+use TCPDF_FONTS;
 
 final class CertificationService extends Service
 {
@@ -31,8 +32,8 @@ final class CertificationService extends Service
 
             $certificationData = [
                   'institution' => $data['institution'] ?? null,
-                  'address' => $data['address'] ?? null,
-                  'content' => $data['content'] ?? null,
+                  // 'address' => $data['address'] ?? null,
+                  // 'content' => $data['content'] ?? null,
                   'certifier' => $data['certifier'] ?? null,
             ];
 
@@ -120,99 +121,153 @@ final class CertificationService extends Service
                         }
                   }
 
-                  // Creación de PDF
                   $storagePath = __DIR__ . '/../../storage/';
-                  $templatePdf = $storagePath . 'templates/certifies/' . $certify['template'];   // PDF de base
-                  $certificationPdf = $storagePath . 'uploads/certifications/' . $certificationCode . '.pdf'; // PDF resultante
 
-                  // Eliminamos el certificado anterior
+                  $templatePdf = $storagePath . 'templates/certifies/' . $certify['template'];
+                  $certificationPdf = $storagePath . 'uploads/certifications/' . $certificationCode . '.pdf';
+
+                  $fontPath = $storagePath . 'fonts/';
+
+                  $robotoRegular = TCPDF_FONTS::addTTFfont($fontPath . 'Roboto-Regular.ttf', 'TrueTypeUnicode', '', 96);
+                  $robotoBold = TCPDF_FONTS::addTTFfont($fontPath . 'Roboto-Bold.ttf', 'TrueTypeUnicode', '', 96);
+                  $montserratRegular = TCPDF_FONTS::addTTFfont($fontPath . 'Montserrat-Regular.ttf', 'TrueTypeUnicode', '', 96);
+                  $montserratBold = TCPDF_FONTS::addTTFfont($fontPath . 'Montserrat-Bold.ttf', 'TrueTypeUnicode', '', 96);
+
                   if ($isUpdate && is_file($certificationPdf)) {
                         unlink($certificationPdf);
                   }
 
-                  // Crear instancia FPDI+TCPDF
-                  $pdf = new Fpdi();
-
-                  // Importar página del PDF base
-                  $pdf->setSourceFile($templatePdf);
-                  $tplId = $pdf->importPage(1);
-                  $size  = $pdf->getTemplateSize($tplId);
+                  $pdf = new Fpdi('P', 'mm', 'LETTER', true, 'UTF-8', false);
 
                   $pdf->setPrintHeader(false);
                   $pdf->setPrintFooter(false);
-                  $pdf->SetHeaderMargin(0);
-                  $pdf->SetFooterMargin(0);
-
-                  $pdf->SetAutoPageBreak(false, 0);
                   $pdf->SetMargins(0, 0, 0, true);
+                  $pdf->SetAutoPageBreak(false, 0);
+
+                  $pdf->setSourceFile($templatePdf);
+                  $tplId = $pdf->importPage(1);
+                  $size = $pdf->getTemplateSize($tplId);
 
                   $pdf->AddPage($size['orientation'], [$size['width'], $size['height']]);
                   $pdf->useTemplate($tplId);
+
                   $pageWidth = $size['width'];
                   $pageHeight = $size['height'];
 
-                  $formatter = new \IntlDateFormatter(
-                        'es_ES',                  // idioma/región
-                        \IntlDateFormatter::LONG, // formato largo (ej: "1 de febrero de 2024")
-                        \IntlDateFormatter::NONE,
-                        'UTC',                    // zona horaria
-                        \IntlDateFormatter::GREGORIAN
+                  $primaryColor = [23, 57, 97];
+                  $accentColor = [151, 61, 75];
+                  $textColor = [90, 90, 90];
+
+                  $writeCentered = function (
+                        Fpdi $pdf,
+                        string $text,
+                        float $x,
+                        float $y,
+                        float $w,
+                        float $h,
+                        string $font,
+                        int $size,
+                        array $color,
+                        string $style = ''
+                  ) {
+                        $pdf->SetFont($font, $style, $size);
+                        $pdf->SetTextColor($color[0], $color[1], $color[2]);
+                        $pdf->SetXY($x, $y);
+                        $pdf->MultiCell($w, $h, $text, 0, 'C', false, 1);
+                  };
+
+                  $writeLeft = function (
+                        Fpdi $pdf,
+                        string $text,
+                        float $x,
+                        float $y,
+                        float $w,
+                        float $h,
+                        string $font,
+                        int $size,
+                        array $color,
+                        string $style = ''
+                  ) {
+                        $pdf->SetFont($font, $style, $size);
+                        $pdf->SetTextColor($color[0], $color[1], $color[2]);
+                        $pdf->SetXY($x, $y);
+                        $pdf->MultiCell($w, $h, $text, 0, 'L', false, 1);
+                  };
+
+                  // Nombre de institución
+                  // $writeCentered(
+                  //       $pdf,
+                  //       $certificationData['institution'],
+                  //       27,
+                  //       103,
+                  //       162,
+                  //       14,
+                  //       $montserratBold,
+                  //       20,
+                  //       $accentColor
+                  // );
+
+                  // Número de registro
+                  $writeLeft(
+                        $pdf,
+                        $isUpdate ? $certification['code'] : $certificationData['code'],
+                        37,
+                        193.5,
+                        38,
+                        6,
+                        $robotoRegular,
+                        9,
+                        $textColor
                   );
 
-                  $pdf->SetTextColor(40, 40, 40); // negro
-
-                  // Institución
-                  $pdf->SetFont('helvetica', 'B', 30);
-                  $pdf->SetXY(35, 62);
-                  $pdf->MultiCell(210, 0, $certificationData['institution'], 0, 'C');
-
-                  // Código
-                  $pdf->SetFont('helvetica', '', 10);
-                  $pdf->SetXY(110, 111.75);
-                  $pdf->Cell(100, 0,  $isUpdate ? $certification['code'] : $certificationData['code'], 0, 1, 'L');
-
-                  // Dirección
-                  $pdf->SetFont('helvetica', '', 10);
-                  $pdf->SetXY(110, 118.5);
-                  $pdf->MultiCell(130, 0, $certificationData['address'], 0, 'L', false);
-
-                  // Contenido
-                  $pdf->setCellHeightRatio(1.0); // compacta todo
-                  $pdf->SetFont('helvetica', '', 12);
-                  $pdf->writeHTMLCell(
-                        200, // ancho
-                        0,   // alto (0 = autoajustable)
-                        45,  // X
-                        130,  // Y
-                        $certificationData['content'],
-                        0,   // borde
-                        1,   // salto de línea
-                        0,   // fill
-                        true, // reset height
-                        'J',  // align
-                        true // autopadding
+                  // Fecha de emisión
+                  $writeLeft(
+                        $pdf,
+                        $certificationData['start_date'],
+                        98,
+                        193.5,
+                        34,
+                        6,
+                        $robotoRegular,
+                        9,
+                        $textColor
                   );
 
-                  // Fecha de inicio
-                  $pdf->SetFont('helvetica', 'B', 10);
-                  $pdf->SetXY(82, 170.4);
-                  $pdf->Cell(0, 0, $certificationData['start_date'], 0, 1, 'L');
-
-                  // Fecha de fin
-                  $pdf->SetXY(98, 177);
-                  $pdf->Cell(0, 0, $certificationData['end_date'], 0, 1, 'L');
-
-                  // Certificador
-                  $pdf->SetFont('helvetica', '', 13);
-                  $pdf->SetXY($pageWidth - 85, 186);
-                  $pdf->Cell(60, 0, $certificationData['certifier'], 0, 1, 'C');
+                  // Fecha de vencimiento
+                  $writeLeft(
+                        $pdf,
+                        $certificationData['end_date'],
+                        151,
+                        193.5,
+                        34,
+                        6,
+                        $robotoRegular,
+                        9,
+                        $textColor
+                  );
 
                   // Firma
                   if (!empty($signature)) {
-                        $pdf->Image($storagePath . "uploads/signatures/" . $signature, $pageWidth - 74, 162, 28, 0, 'PNG');
+                        $signaturePath = $storagePath . 'uploads/signatures/' . $signature;
+
+                        if (is_file($signaturePath)) {
+                              $pdf->Image($signaturePath, 94, 220, 28, 0, 'PNG');
+                        }
                   }
 
-                  // Guardar PDF
+                  // Nombre del certificador
+                  $writeCentered(
+                        $pdf,
+                        $certificationData['certifier'],
+                        72,
+                        243,
+                        72,
+                        6,
+                        $robotoRegular,
+                        11,
+                        $textColor
+                  );
+
                   $pdf->Output($certificationPdf, 'F');
 
                   Database::commit();

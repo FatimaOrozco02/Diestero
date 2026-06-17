@@ -20,7 +20,7 @@ final class CertificationController extends Controller
                   'certifies' => (new Certify())->getGeneral(['id', 'shortname'], ['is_active' => true], 'shortname ASC')
             ];
 
-            $this->view()->addLibScript('tinymce/tinymce.min.js');
+            // $this->view()->addLibScript('tinymce/tinymce.min.js');
             $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
             $this->view()->addStyle('admin/styles.css');
             $this->view()->addScript('admin/scripts.js');
@@ -41,7 +41,7 @@ final class CertificationController extends Controller
                   'certifies' => (new Certify())->getGeneral(['id', 'shortname'], ['is_active' => true], 'shortname ASC')
             ];
 
-            $this->view()->addLibScript('tinymce/tinymce.min.js');
+            // $this->view()->addLibScript('tinymce/tinymce.min.js');
             $this->view()->addLibScript('jquery-validation/jquery.validate.min.js');
             $this->view()->addStyle('admin/styles.css');
             $this->view()->addScript('admin/scripts.js');
@@ -96,8 +96,8 @@ final class CertificationController extends Controller
             $validator = Validator::make(array_merge($this->request->body(), $this->request->files()), [
                   'certify_id' => 'required|integer',
                   'institution' => 'required|string|min:3|max:250',
-                  'address' => 'required|string|min:3|max:250',
-                  'content' => 'required|string|min:3|max:2000',
+                  // 'address' => 'required|string|min:3|max:250',
+                  // 'content' => 'required|string|min:3|max:2000',
                   'certifier' => 'required|string|min:3|max:100',
                   'start_date' => 'nullable|date',
                   'end_date' => 'nullable|date',
@@ -124,8 +124,8 @@ final class CertificationController extends Controller
       {
             $validator = Validator::make(array_merge($this->request->body(), $this->request->files()), [
                   'institution' => 'required|string|min:3|max:250',
-                  'address' => 'required|string|min:3|max:250',
-                  'content' => 'required|string|min:3|max:2000',
+                  // 'address' => 'required|string|min:3|max:250',
+                  // 'content' => 'required|string|min:3|max:2000',
                   'certifier' => 'required|string|min:3|max:100',
                   'start_date' => 'nullable|date',
                   'end_date' => 'nullable|date',
