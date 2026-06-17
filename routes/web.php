@@ -25,6 +25,7 @@ $router->get('socios', 'HomeController@partners');
 $router->get('contacto', 'HomeController@contact');
 $router->post('contacto', 'MailerController@enviar');
 $router->post('certificaciones/verificar', 'CertificationController@getByCode');
+$router->get('prueba','MailerController@prueba');
 
 
 // Admin
