@@ -36,7 +36,7 @@
 <footer class="text-white p-0 position-relative w-100 overflow-hidden" 
         style="min-height: 300px; height: auto; background-color: #000;">
    
-    <!-- FONDO AJUSTADO: Cambiado 'contain' por 'cover' para centrar y expandir la imagen correctamente -->
+   
     <div class="position-absolute top-0 start-0 w-100 h-100 d-none d-lg-block" 
          style="background: url('<?php echo $baseUrl ?>img/banner diestro footer copia 2.jpg') center center / cover no-repeat;">
     </div>
