@@ -195,17 +195,17 @@ final class CertificationService extends Service
                   };
 
                   // Nombre de institución
-                  // $writeCentered(
-                  //       $pdf,
-                  //       $certificationData['institution'],
-                  //       27,
-                  //       103,
-                  //       162,
-                  //       14,
-                  //       $montserratBold,
-                  //       20,
-                  //       $accentColor
-                  // );
+                  $writeCentered(
+                        $pdf,
+                        $certificationData['institution'],
+                        27,
+                        103,
+                        162,
+                        14,
+                        $montserratBold,
+                        21,
+                        $accentColor
+                  );
 
                   // Número de registro
                   $writeLeft(
@@ -248,10 +248,22 @@ final class CertificationService extends Service
 
                   // Firma
                   if (!empty($signature)) {
-                        $signaturePath = $storagePath . 'uploads/signatures/' . $signature;
+                        $signaturePath = realpath($storagePath . 'uploads/signatures/' . $signature);
 
-                        if (is_file($signaturePath)) {
-                              $pdf->Image($signaturePath, 94, 220, 28, 0, 'PNG');
+                        if ($signaturePath !== false && is_readable($signaturePath)) {
+                              $imageInfo = getimagesize($signaturePath);
+
+                              if ($imageInfo !== false) {
+                                    $imageType = match ($imageInfo[2]) {
+                                          IMAGETYPE_PNG => 'PNG',
+                                          IMAGETYPE_JPEG => 'JPG',
+                                          default => null,
+                                    };
+
+                                    if ($imageType !== null) {
+                                          $pdf->Image($signaturePath, 94, 220, 28, 0, $imageType);
+                                    }
+                              }
                         }
                   }
 
