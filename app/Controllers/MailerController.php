@@ -40,12 +40,16 @@ final class MailerController extends Controller {
             $mail->SMTPDebug = SMTP::DEBUG_OFF; // Mantener apagado para no corromper la respuesta JSON                      
             $mail->isSMTP();                                            
             
-            $mail->Host       = 'smtp.office365.com';                       
+            $mail->Host       = 'outlook.office365.com';                       
             $mail->SMTPAuth   = true;                                   
             $mail->Username   = 'diestrocorporativo@diestro.com';
-            $mail->Password   = 'D$180886342843ap';    
+            $mail->Password   = 'D$180886342843ap';
+            // $mail->Username   = 'forozco@difusion.com.mx';
+            // $mail->Password   = 'Fa19or26@'; 
+            // $mail->Username   = 'jsalazar@difusion.com.mx';
+            // $mail->Password   = 'D%570559158451on';   
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            
-            $mail->Port       = 587;  
+            $mail->Port       = 993;  
             
             // $mail->Host       = 'smtp.gmail.com';                       //Set the SMTP server to send through
             // $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
@@ -55,10 +59,11 @@ final class MailerController extends Controller {
             // $mail->Port       = 465;
 
 
-
-            
             $mail->setFrom('diestrocorporativo@diestro.com', $nameP);
-            $mail->addAddress('diestrocorporativo@diestro.com', 'Diestro');  
+            $mail->addAddress('diestrocorporativo@diestro.com', 'Diestro'); 
+            
+            // $mail->setFrom('jsalazar@difusion.com.mx', $nameP);
+            // $mail->addAddress('jsalazar@difusion.com.mx', 'Diestro');  
 
             
             $mail->isHTML(true);                                        
@@ -82,7 +87,8 @@ final class MailerController extends Controller {
         } catch (Exception $e) {
             
             echo json_encode(['status' => 'error', 'message' => 'El mensaje no pudo ser enviado. Inténtelo más tarde.']);
-            // echo "Errror: {$mail->ErrorInfo}";
+            echo "Errror: {$mail->ErrorInfo}";
+            echo "{$e->getMessage()}";
             exit;
         }
     }

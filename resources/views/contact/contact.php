@@ -20,67 +20,74 @@
                         <p class="mb-0">
                             Ya sea que busques financiamiento, certificaciones o soluciones para fortalecer tu operación, estamos listos para ayudarte.
                         </p>
+
+                        <p class="mb-0">
+                            Contáctanos a través de nuestro números telefónicos al <strong style="color: #8D3C45;">+52 (55) 52346518 / +52 (55) 52346519 </strong> o llena el siguiente formulario:
+                        </p>
+
+
+
                     </div>
                 </div>
 
-                
+
                 <div class="row g-4 align-items-stretch " style="min-height: 500px;">
 
-                    
+
                     <div class="col-12 col-md-6 position-relative">
-                        
+
                         <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-100 object-fit-cover shadow-sm rounded-1 d-none d-md-block position-absolute top-0 start-0">
                         <!-- Imagen en Móvil: Se ajusta arriba de forma natural con su separación -->
                         <img src="<?php echo $baseUrl ?>img/call-1.jpg" alt="Contacto Diestro" class="w-100 h-auto d-block d-md-none object-fit-cover shadow-sm rounded-1" style="max-height: 250px;">
                     </div>
 
                     <!-- Columna Derecha: Formulario -->
-                     <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6">
                         <div class="p-4 p-lg-5 shadow-sm rounded-1 h-100" style="background-color: #f4f6f8;">
                             <div id="alert-container"></div>
-                       
-                                <form id="form-contacto" method="POST">
 
-                                    <!-- Nombre -->
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label small fw-semibold text-muted mb-1">Nombre</label>
-                                        <input type="text" class="form-control rounded-1 border-0 py-2 shadow-sm" id="name" name="name" required style="font-size: 0.95rem;">
-                                    </div>
+                            <form id="form-contacto" method="POST">
 
-                                    <!-- Correo -->
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label small fw-semibold text-muted mb-1">Correo electrónico</label>
-                                        <input type="email" class="form-control rounded-1 border-0 py-2 shadow-sm" id="email" name="email" required style="font-size: 0.95rem;">
-                                    </div>
+                                <!-- Nombre -->
+                                <div class="mb-3">
+                                    <label for="name" class="form-label small fw-semibold text-muted mb-1">Nombre</label>
+                                    <input type="text" class="form-control rounded-1 border-0 py-2 shadow-sm" id="name" name="name" required style="font-size: 0.95rem;">
+                                </div>
 
-                                    <!-- Asunto -->
-                                    <div class="mb-3">
-                                        <label for="subject" class="form-label small fw-semibold text-muted mb-1">Asunto</label>
-                                        <input type="text" class="form-control rounded-1 border-0 py-2 shadow-sm" id="subject" name="subject" required style="font-size: 0.95rem;">
-                                    </div>
+                                <!-- Correo -->
+                                <div class="mb-3">
+                                    <label for="email" class="form-label small fw-semibold text-muted mb-1">Correo electrónico</label>
+                                    <input type="email" class="form-control rounded-1 border-0 py-2 shadow-sm" id="email" name="email" required style="font-size: 0.95rem;">
+                                </div>
 
-                                    <!-- Mensaje -->
-                                    <div class="mb-4">
-                                        <label for="message" class="form-label small fw-semibold text-muted mb-1">Mensaje</label>
-                                        <textarea class="form-control rounded-1 border-0 py-2 shadow-sm" id="message" name="message" rows="4" required style="font-size: 0.95rem;"></textarea>
-                                    </div>
+                                <!-- Asunto -->
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label small fw-semibold text-muted mb-1">Asunto</label>
+                                    <input type="text" class="form-control rounded-1 border-0 py-2 shadow-sm" id="subject" name="subject" required style="font-size: 0.95rem;">
+                                </div>
 
-                                    <!-- Botón Enviar -->
-                                    <div class="pt-1">
-                                        <button type="submit" class="btn text-white w-100 py-2 fw-semibold rounded-1 transition-all shadow-sm" style="background-color: #8D3C45; font-size: 0.95rem; border: none;">
-                                            Enviar mensaje
-                                        </button>
-                                    </div>
+                                <!-- Mensaje -->
+                                <div class="mb-4">
+                                    <label for="message" class="form-label small fw-semibold text-muted mb-1">Mensaje</label>
+                                    <textarea class="form-control rounded-1 border-0 py-2 shadow-sm" id="message" name="message" rows="4" required style="font-size: 0.95rem;"></textarea>
+                                </div>
 
-                                </form>
-                            </div>    
+                                <!-- Botón Enviar -->
+                                <div class="pt-1">
+                                    <button type="submit" class="btn text-white w-100 py-2 fw-semibold rounded-1 transition-all shadow-sm" style="background-color: #8D3C45; font-size: 0.95rem; border: none;">
+                                        Enviar mensaje
+                                    </button>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
-
-                </div> 
+                </div>
 
             </div>
-        </section>
 
-    </div> 
+    </div>
+    </section>
+
+</div>
 </div>
