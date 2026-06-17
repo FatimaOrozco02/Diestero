@@ -5,6 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title><?= $title ?? "CRM" ?></title>
+      <link rel="shortcut icon" href="<?php echo $baseUrl ?>img/favicon.ico" />
       <link rel="stylesheet" href="<?= publicUrl('lib/Bootstrap/css/bootstrap.css') ?>">
       <link rel="stylesheet" href="<?= publicUrl('lib/SweetAlert/sweetalert2.min.css') ?>">
       <link rel="stylesheet" href="<?= publicUrl('lib/fontawesome/css/all.css') ?>">

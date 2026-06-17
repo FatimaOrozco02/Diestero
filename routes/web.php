@@ -23,7 +23,7 @@ $router->get('soluciones_estrategicas', 'HomeController@solutions');
 $router->get('cfoaas', 'HomeController@cfoaas');
 $router->get('socios', 'HomeController@partners');
 $router->get('contacto', 'HomeController@contact');
-
+$router->post('contacto', 'MailerController@enviar');
 $router->post('certificaciones/verificar', 'CertificationController@getByCode');
 
 
